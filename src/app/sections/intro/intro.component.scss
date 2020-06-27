@@ -1,0 +1,37 @@
+$body-font-color:      #CCCCCC;
+$secondary-font-color: #14A098;
+$main-font-color-dark: #0F292F;
+
+// color-scheme
+// .test{
+//     --primary-color: #501F3A;
+//     --secondary-color: #CB2D6F;
+//     --text-color: #CCCCCC;
+//     --body-color: #14A098;
+//     --background-color:  #0F292F;
+// }
+
+.introduction { 
+    width: 100%;
+    height: 100vh;
+    background-color: $main-font-color-dark;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-headline {
+    color: $secondary-font-color;
+}
+
+.headline-name {
+    color: #8e8e8e;
+}
+
+.headline {
+    color: $body-font-color;
+}
+
+.headline-description {
+    color: $body-font-color;
+}
