@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ContactComponent } from './contact/contact.component';
 import { IntroComponent } from './intro/intro.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { HeaderComponent } from './intro/header/header.component';
 
 
 
@@ -10,6 +11,7 @@ import { ProjectsComponent } from './projects/projects.component';
   declarations: [
     ContactComponent,
     IntroComponent,
+    HeaderComponent,
     ProjectsComponent
   ],
   exports: [
@@ -18,7 +20,7 @@ import { ProjectsComponent } from './projects/projects.component';
     ContactComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
   ]
 })
 export class SectionsModule { }

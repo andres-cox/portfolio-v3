@@ -1,9 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css?family=Lekton|Roboto+Mono|Overpass');
-
-$body-font: 'Lekton';
-$highlight-font: 'Roboto Mono';
-$secondary-font: 'Overpass';
+@import "./app/styles/variables";
 
 *,
 *::before,
@@ -20,9 +15,27 @@ html {
     scroll-behavior: smooth;
 }
 
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+section {
+    padding: 3.9rem 0;
+    // overflow: hidden;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
 .container {
     width: 100%;
     max-width: 122.5rem;
     margin: 0 auto;
-    padding: 0 7.4rem;
+    padding: 0 2.4rem;
 }
