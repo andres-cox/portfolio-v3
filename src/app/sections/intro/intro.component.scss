@@ -1,14 +1,5 @@
 @import "../../styles/variables";
 
-// color-scheme
-// .test{
-//     --primary-color: #501F3A;
-//     --secondary-color: #CB2D6F;
-//     --text-color: #CCCCCC;
-//     --body-color: #14A098;
-//     --background-color:  #0F292F;
-// }
-
 .introduction { 
     width: 100%;
     height: 100vh;
@@ -25,13 +16,13 @@
 }
 
 .headline-name {
-    color: #8e8e8e;
+    color: $body-color;
     font-family: $highlight-font;
     font-size: 5.4rem;
 }
 
 .headline {
-    color: $body-color;
+    color: $tertiary-color;
     font-family: $highlight-font;
     font-size: 5.4rem;
 

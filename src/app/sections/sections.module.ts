@@ -4,6 +4,7 @@ import { ContactComponent } from './contact/contact.component';
 import { IntroComponent } from './intro/intro.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { HeaderComponent } from './intro/header/header.component';
+import { AboutComponent } from './about/about.component';
 
 
 
@@ -12,12 +13,14 @@ import { HeaderComponent } from './intro/header/header.component';
     ContactComponent,
     IntroComponent,
     HeaderComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    AboutComponent
   ],
   exports: [
     IntroComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    AboutComponent
   ],
   imports: [
     CommonModule,
