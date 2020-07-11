@@ -1,0 +1,11 @@
+@import "../../styles/variables";
+
+.projects{
+    min-height: 720px;
+    .projects__headline::before {
+        content: '2. ';
+        color: $secondary-color;
+        font-size: 2.4rem;
+    }
+
+}

@@ -114,24 +114,3 @@ nav {
    }
 }
 
-.btn {
-    display: inline-block;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-right: 2px;
-}
-
-.btn-primary {
-    font-size: 2.1rem;
-    padding: .9rem 1.8rem;
-    color: $secondary-color;
-    border:  $secondary-color 2px solid;
-    border-radius: .4rem;
-    transition: background-color 500ms;
-}
-
-.btn-primary:hover,
-.btn-primary:focus {
-    color: $body-color;
-    background-color: $secondary-color;
-}

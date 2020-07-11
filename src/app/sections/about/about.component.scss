@@ -3,14 +3,11 @@
 
 .about{
     height: 100vh;
-    padding: 20% 0;
-    .headline{
-        font-size: 2.4rem;
-        color: $tertiary-color;
-        margin-bottom: 3rem;
-    }
+    min-height: 720px;
+    padding: 10px 0;
+    
 
-    .headline::before {
+    .about__headline::before {
         content: '1. ';
         color: $secondary-color;
 
@@ -20,6 +17,7 @@
         color: $body-color;
         p {
             margin-bottom: 1.5rem;
+            font-size: 2.4rem;
         }
     }
     

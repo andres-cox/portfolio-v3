@@ -5,6 +5,7 @@ import { IntroComponent } from './intro/intro.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { HeaderComponent } from './intro/header/header.component';
 import { AboutComponent } from './about/about.component';
+import { ProjectComponent } from './projects/project/project.component';
 
 
 
@@ -14,7 +15,8 @@ import { AboutComponent } from './about/about.component';
     IntroComponent,
     HeaderComponent,
     ProjectsComponent,
-    AboutComponent
+    AboutComponent,
+    ProjectComponent
   ],
   exports: [
     IntroComponent,
