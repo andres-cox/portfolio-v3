@@ -7,6 +7,7 @@
     .headline{
         font-size: 2.4rem;
         color: $tertiary-color;
+        margin-bottom: 3rem;
     }
 
     .headline::before {
@@ -17,12 +18,20 @@
 
     .about__content{
         color: $body-color;
-        font-size: 2.4rem;
+        p {
+            margin-bottom: 1.5rem;
+        }
     }
     
     .about__skills{
         display: grid;
         grid-template-columns: repeat(2, minmax(140px, 200px));
+        color: $body-color;
+        list-style-type: none;
         font-size: 2.4rem;
+        
+        li::before {
+            content: '';
+        }
     }
 }
