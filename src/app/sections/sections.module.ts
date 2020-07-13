@@ -6,6 +6,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { HeaderComponent } from './intro/header/header.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectComponent } from './projects/project/project.component';
+import { AppRoutingModule } from '../app-routing.module';
 
 
 
@@ -26,6 +27,7 @@ import { ProjectComponent } from './projects/project/project.component';
   ],
   imports: [
     CommonModule,
+    AppRoutingModule,
   ]
 })
 export class SectionsModule { }
