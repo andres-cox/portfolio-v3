@@ -7,32 +7,32 @@
     background-color: $main-color-dark;
     display: flex;
     align-items: center;
-}
-
-.sub-headline {
-    color: $secondary-color;
-    font-family: $secondary-font;
-    font-size: 2.4rem;
-
-}
-
-.headline-name {
-    color: $body-color;
-    font-family: $highlight-font;
-    font-size: 5.4rem;
-}
-
-.headline {
-    color: $tertiary-color;
-    font-family: $highlight-font;
-    font-size: 5.4rem;
-
-}
-
-.headline-description {
-    color: $body-color;
-    font-family: $body-font;
-    margin-top: 4rem;
-    font-size: 2.4rem;
-
+    
+    &__subheadline {
+        color: $secondary-color;
+        font-family: $secondary-font;
+        font-size: 2.4rem;
+    
+    }
+    
+    &__headline-name {
+        color: $body-color;
+        font-family: $highlight-font;
+        font-size: 5.4rem;
+    }
+    
+    &__headline {
+        color: $tertiary-color;
+        font-family: $highlight-font;
+        font-size: 5.4rem;
+    
+    }
+    
+    &__headline-description {
+        color: $body-color;
+        font-family: $body-font;
+        margin-top: 4rem;
+        font-size: 2.4rem;
+    
+    }
 }

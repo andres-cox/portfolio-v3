@@ -3,8 +3,8 @@
 @import "../../styles/variables";
 
 // variables
-$card-width:  450px;
-$card-height: 500px;
+$card-width:  350px;
+$card-height: 350px;
 $h-color:     $secondary-color;
 $yellow:      $tertiary-color;
 $txt-color:   $tertiary-color;
@@ -22,8 +22,16 @@ $txt-color:   $tertiary-color;
 
     &__content {
         display: flex;
-        flex-direction: column;
+        // flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
+        justify-content: space-around;
+    }
+
+    &__headline::before {
+      content: '3. ';
+      color: $secondary-color;
+      font-size: 2.4rem;
     }
 
     .card{
@@ -31,7 +39,7 @@ $txt-color:   $tertiary-color;
       height: $card-height;
       position: relative;
       overflow: hidden;
-      margin: 2rem 0;
+      margin: 2rem .7rem;
       border-radius: 10px;
       box-shadow: 3px 3px 20px rgba(0, 0, 0, .5);
       text-align: center;
@@ -56,11 +64,11 @@ $txt-color:   $tertiary-color;
       }
 
       hr{
-        width: 50px;
+        width: 70px;
         height: 3px;
         margin: 20px auto;
         border: 0;
-        background: $yellow;
+        background: $body-color;
       }
       
       &__intro{
@@ -76,7 +84,7 @@ $txt-color:   $tertiary-color;
       &__info{
         width: 100%;
         position: absolute;
-        bottom: 100px;
+        bottom: 60px;
         left: 0;
         margin: 0 auto;
         padding: 0 50px;
@@ -125,7 +133,7 @@ $txt-color:   $tertiary-color;
       &:hover{
         .card__info{
           opacity: 1;
-          bottom: 120px;
+          bottom: 80px;
         }
         
         .color-overlay{
