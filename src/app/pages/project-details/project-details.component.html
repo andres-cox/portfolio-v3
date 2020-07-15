@@ -1,4 +1,10 @@
-<img src="assets/management-app/home.png">
+<swiper class="swiper-container" [disabled]="disabled" [config]="config" fxFlex="auto">
+    <div *ngFor="let slide of slides" class="swiper-slide">
+
+        <img [src]="slide">
+    </div>
+</swiper>
+
 <div class="project">
     <div class="container">
         <h2 class="project__title">Project title</h2>
@@ -33,5 +39,10 @@
                     debitis ipsum. Eius, consequuntur!</p>
             </div>
         </div>
+        <h2 class="project__title">Comments</h2>
+        <p class="project__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique incidunt
+            quia
+            natus minus dolorem, iure quis
+            sapiente veritatis a enim, dignissimos ipsum aut quas perferendis error iste non vel corrupti?</p>
     </div>
 </div>
