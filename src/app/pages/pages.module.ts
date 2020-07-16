@@ -1,8 +1,9 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { SectionsModule } from '../sections/sections.module';
+import { ComponentsModule } from '../components/components.module';
 import { SwiperModule } from 'ngx-swiper-wrapper';
 
 @NgModule({
@@ -13,7 +14,8 @@ import { SwiperModule } from 'ngx-swiper-wrapper';
   imports: [
     CommonModule,
     SectionsModule,
-    SwiperModule
+    SwiperModule,
+    ComponentsModule
   ]
 })
 export class PagesModule { }

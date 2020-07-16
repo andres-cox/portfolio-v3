@@ -1,12 +1,11 @@
 @import "variables";
 
-.card-right{
+.card-right {
     flex-direction: row-reverse;
     text-align: right;
 
     .card__technologies {
         justify-content: flex-end;
-        
     }
 
     .card__links {
@@ -14,7 +13,7 @@
     }
 }
 
-.card{
+.card {
     position: relative;
     background: black;
     padding: 4rem;
@@ -25,7 +24,6 @@
         color: $secondary-color;
         font-size: 1.3rem;
         margin: 5px 0;
-
     }
 
     &__headline{
@@ -107,6 +105,7 @@
         &__info {
             z-index: 15;
         }
+
         &__content {
             background: $main-color-dark;
             padding: 10px;
@@ -114,7 +113,6 @@
             box-shadow: 3px 3px 20px rgba(0, 0, 0, .5);
 
         }
-        
         
         &__technologies {
             justify-content: flex-start;
@@ -128,6 +126,7 @@
                 margin: .7rem 0;
             }
         }
+
         &__image {
             background: $main-color-dark;
             display: flex;
