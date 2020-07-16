@@ -1,5 +1,19 @@
 @import "variables";
 
+.card-right{
+    flex-direction: row-reverse;
+    text-align: right;
+
+    .card__technologies {
+        justify-content: flex-end;
+        
+    }
+
+    .card__links {
+        align-items: flex-end;
+    }
+}
+
 .card{
     position: relative;
     background: black;
@@ -90,6 +104,16 @@
         right: 0;
         display: flex;
         
+        &__info {
+            z-index: 15;
+        }
+        &__content {
+            background: $main-color-dark;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 3px 3px 20px rgba(0, 0, 0, .5);
+
+        }
         
         
         &__technologies {
@@ -105,16 +129,22 @@
             }
         }
         &__image {
+            background: $main-color-dark;
+            display: flex;
+            align-items: center;
+            
             img {
                 position: initial;
                 width: 100%;
                 height: auto;
-                // margin-top: -42%;
                 object-fit: cover;
-                opacity: 0.2;
-                // height: 80%;
+                opacity: .6;
+                margin: 0 -4rem;
             }
-            
+
+            img:hover {
+                opacity: 1;
+            }
         }
 
     }

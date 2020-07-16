@@ -114,3 +114,51 @@ nav {
    }
 }
 
+@media screen and (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav {
+        padding: 0 1.7rem;
+        display: flex;
+        justify-content: space-between;
+        .logo {
+            position: initial;
+            width: 7rem;
+        }
+    }
+
+    
+    .nav-list {
+        position: initial;
+        width: initial;
+        height: initial;
+        background-color: transparent;
+        padding: 0;
+        justify-content: initial;
+        flex-direction: row;
+        transform: initial;
+        transition: initial;
+    }
+    
+    .nav-item {
+        margin: 0 1.3rem;
+        border: none;
+    }
+
+    .nav-item::before {
+        display: initial;
+        font-size: 1.7rem;
+    }
+    
+    .nav-item:last-child{
+        margin-right: 0;
+    }
+    
+    .nav-link {
+        color: $tertiary-color;
+        font-size: 1.7rem;
+    }
+
+}

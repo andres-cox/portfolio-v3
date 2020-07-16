@@ -29,6 +29,14 @@ export class ProjectDetailsComponent implements OnInit {
     scrollbar: false,
     navigation: true,
     pagination: true,
+    breakpoints: {
+      768: {
+        slidesPerView: 1.7,
+        spaceBetween: 5,
+        pagination: false,
+        freeMode: true,
+      },
+    }
   };
 
   // private scrollbar: SwiperScrollbarInterface = {
