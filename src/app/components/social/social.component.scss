@@ -1,17 +1,15 @@
 @import 'variables';
 
 .social {
-    position: fixed;
-    left: 4rem;
-    bottom: 15vh;
+    
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     
     &__link {
         border: 2px solid $tertiary-color;
-        border-radius: 2rem;
+        border-radius: 37%;
         padding: 1rem;
-        margin: 1rem 0;
+        margin: 1rem;
         color: $tertiary-color;
         font-size: 2.4rem;
         text-align: center;
@@ -23,5 +21,12 @@
         border-color: $main-color-dark;
         background-color: $tertiary-color;
 
+    }
+}
+
+@media screen and (min-width: 768px){
+    .social{
+        flex-direction: column;
+        justify-content: start
     }
 }

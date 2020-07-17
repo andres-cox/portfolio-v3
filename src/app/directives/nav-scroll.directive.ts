@@ -4,16 +4,19 @@ import { Directive, HostBinding, HostListener } from '@angular/core';
   selector: '[appNavScroll]'
 })
 export class NavScrollDirective {
-  @HostBinding('style.backgroundColor') backgroundColor: string = 'transparent';
+  @HostBinding('style.top') top: string = '0px';
+  @HostBinding('style.boxShadow') boxShadow: string = 'none';
 
-  constructor() { }
+  prevScrollpos = window.pageYOffset;
 
-  @HostListener('mouseenter') mouseover() {
-    this.backgroundColor = 'red';
-  }
+  @HostListener('window:scroll', ['$event']) scrollEvent(event: Event) {
+    let currentScrollPos = window.pageYOffset;
 
-  @HostListener('mouseleave') mouseleave() {
-    this.backgroundColor = 'black';
+    this.boxShadow = (window.pageYOffset == 0) ? 'none' : '2px 2px 20px rgba(0, 0, 0, .5)'
+
+    this.top = (this.prevScrollpos > currentScrollPos) ? '0' : '-75px';
+
+    this.prevScrollpos = currentScrollPos;
   }
 
 }

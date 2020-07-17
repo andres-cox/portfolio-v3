@@ -9,10 +9,14 @@ header{
 }
 
 nav {
+    background-color: $main-color-dark;
+    position: fixed;
+    width: 100%;
     height: 7.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: top 300ms;
 
     .logo {
         position: absolute;
@@ -96,6 +100,7 @@ nav {
 
 // Side Navbar
 .open {
+
     .fa-times {
        display: block;
    }
