@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ContactComponent } from './contact/contact.component';
+import { AppRoutingModule } from '../app-routing.module';
+import { ComponentsModule } from '../components/components.module';
 import { IntroComponent } from './intro/intro.component';
-import { ProjectsComponent } from './projects/projects.component';
-import { HeaderComponent } from './intro/header/header.component';
 import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { ProjectsComponent } from './projects/projects.component';
 import { ProjectComponent } from './projects/project/project.component';
 import { ElectronicComponent } from './electronic/electronic.component';
-import { AppRoutingModule } from '../app-routing.module';
 
 
 
@@ -15,7 +15,6 @@ import { AppRoutingModule } from '../app-routing.module';
   declarations: [
     ContactComponent,
     IntroComponent,
-    HeaderComponent,
     ProjectsComponent,
     AboutComponent,
     ProjectComponent,
@@ -30,7 +29,8 @@ import { AppRoutingModule } from '../app-routing.module';
   ],
   imports: [
     CommonModule,
-    AppRoutingModule,
+    ComponentsModule,
+    AppRoutingModule
   ]
 })
 export class SectionsModule { }
