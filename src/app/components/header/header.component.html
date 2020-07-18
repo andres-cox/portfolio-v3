@@ -1,11 +1,11 @@
 <header>
-    <nav appNavScroll [ngClass]="{'open': openSideNavbar == true}" class="nav">
+    <nav [@nav] appNavScroll [ngClass]="{'open': openSideNavbar == true}" class="nav">
         <div (click)="showNav()" class="menu-toggle">
             <i class="fas fa-bars"></i>
             <i class="fas fa-times"></i>
         </div>
         <a href="index.html" class="logo"><img src="assets/icon.png" alt=""></a>
-        <ul [@list1] class="nav-list">
+        <ul class="nav-list">
             <li class="nav-item"><a (click)="showNav()" href="#about" class="nav-link active">About me</a></li>
             <li class="nav-item"><a (click)="showNav()" href="#projects" class="nav-link">Projects</a></li>
             <li class="nav-item"><a (click)="showNav()" href="#electronic" class="nav-link">Electronic</a></li>
