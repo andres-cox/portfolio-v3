@@ -1,14 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { trigger, style, transition, animate, stagger, query, sequence, group } from '@angular/animations';
-import { navAnimations } from '../../shared/animations';
+import { navAnimations } from 'src/app/shared/animations';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
-  animations: [
-    navAnimations
-  ]
+  animations: [navAnimations]
 })
 export class HeaderComponent implements OnInit {
   openSideNavbar: boolean = false;

@@ -8,6 +8,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ProjectComponent } from './projects/project/project.component';
 import { ElectronicComponent } from './electronic/electronic.component';
+import { ScrollAppearDirective } from '../directives/scroll-appear.directive';
 
 
 
@@ -18,7 +19,8 @@ import { ElectronicComponent } from './electronic/electronic.component';
     ProjectsComponent,
     AboutComponent,
     ProjectComponent,
-    ElectronicComponent
+    ElectronicComponent,
+    ScrollAppearDirective,
   ],
   exports: [
     IntroComponent,
