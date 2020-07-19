@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { menutest } from 'src/app/shared/animations';
+import { animations } from 'src/app/shared/animations';
 
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss'],
-  animations: [menutest]
+  animations: [animations]
 })
 export class AboutComponent implements OnInit {
   state: string = 'inactive';
@@ -15,9 +15,7 @@ export class AboutComponent implements OnInit {
   }
 
   onAppear() {
-
     this.state = (this.state === 'inactive' ? 'active' : 'inactive');
-    console.log('about', this.state);
   }
 
 }

@@ -1,7 +1,7 @@
 <section class="about" id="about">
     <div class="container">
         <h3 class="about__headline headline">About Me</h3>
-        <div class="about__content" [@fadeIn]='state' appScrollAppear (appear)="onAppear()">
+        <div class="about__content" [@fade]='state' appScrollAppear (appear)="onAppear()">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique porro reprehenderit deleniti qui
                 natus.
                 Exercitationem alias necessitatibus quasi sunt reprehenderit autem quas consequuntur aliquam minima
@@ -16,7 +16,7 @@
                 Here are a few technologies I have been working with:
             </p>
         </div>
-        <ul class="about__skills">
+        <ul class="about__skills" [@fade]='state'>
             <li>Tecnology</li>
             <li>Tecnology</li>
             <li>Tecnology</li>

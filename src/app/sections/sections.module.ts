@@ -9,6 +9,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ProjectComponent } from './projects/project/project.component';
 import { ElectronicComponent } from './electronic/electronic.component';
 import { ScrollAppearDirective } from '../directives/scroll-appear.directive';
+import { CardComponent } from './electronic/card/card.component';
 
 
 
@@ -21,6 +22,7 @@ import { ScrollAppearDirective } from '../directives/scroll-appear.directive';
     ProjectComponent,
     ElectronicComponent,
     ScrollAppearDirective,
+    CardComponent,
   ],
   exports: [
     IntroComponent,

@@ -1,4 +1,4 @@
-import { trigger, style, transition, animate, stagger, query, sequence, group, state } from '@angular/animations';
+import { trigger, style, transition, animate, stagger, query, group, state } from '@angular/animations';
 
 
 export const navAnimations = [
@@ -10,7 +10,7 @@ export const navAnimations = [
             query('.nav-item', [
                 style({ opacity: 0, transform: 'translateY(-100px)' }),
                 stagger(-200, [
-                    animate('1000ms cubic-bezier(0.35, 0, 0.25, 1)', style({ opacity: 1, transform: 'none' }))
+                    animate('1000ms 1000ms cubic-bezier(0.35, 0, 0.25, 1)', style({ opacity: 1, transform: 'none' }))
                 ])
             ]),
             group([
@@ -32,8 +32,8 @@ export const introAnimations = [
                 style({ opacity: 0 }),
             ]),
             query('h5, h1, p', [
-                stagger(300, [
-                    animate('1000ms 2600ms ease-in', style({ opacity: 1 }))
+                stagger(200, [
+                    animate('800ms ease-in', style({ opacity: 1 }))
                 ])
             ])
         ])
@@ -68,18 +68,6 @@ export const aboutAnimations = [
     ])
 ]
 
-export const menutest = [
-    trigger('fadeIn', [
-        state('inactive', style({
-            opacity: "0"
-        })),
-        state('active', style({
-            opacity: "1"
-        })),
-        transition('inactive <=> active', animate('500ms ease-in'))
-    ])
-]
-
 export const animations = [
     trigger('fadeLeft', [
         state('inactive', style({
@@ -98,5 +86,17 @@ export const animations = [
             opacity: "1", transform: 'none'
         })),
         transition('inactive <=> active', animate('500ms ease-in'))
-    ])
+    ]),
+    trigger('fade', [
+        state('inactive', style({
+            opacity: "0"
+        })),
+        state('active', style({
+            opacity: "1"
+        })),
+
+        transition('inactive => active', [
+            animate('500ms ease-in')
+        ])
+    ]),
 ]

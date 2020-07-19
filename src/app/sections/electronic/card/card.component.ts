@@ -1,16 +1,14 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { animations } from 'src/app/shared/animations';
 
 @Component({
-  selector: 'app-project',
-  templateUrl: './project.component.html',
-  styleUrls: ['./project.component.scss'],
+  selector: 'app-card',
+  templateUrl: './card.component.html',
+  styleUrls: ['./card.component.scss'],
   animations: [animations]
 })
-export class ProjectComponent implements OnInit {
-  @Input() index: number;
+export class CardComponent implements OnInit {
   state: string = 'inactive';
-
   constructor() { }
 
   ngOnInit(): void {
@@ -18,5 +16,6 @@ export class ProjectComponent implements OnInit {
 
   onAppear() {
     this.state = (this.state === 'inactive' ? 'active' : 'inactive');
+    console.log(this.state);
   }
 }
