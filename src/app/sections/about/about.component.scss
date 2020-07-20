@@ -28,9 +28,16 @@
         color: $body-color;
         list-style-type: none;
         font-size: 2.4rem;
-        
-        li::before {
-            content: '';
+        align-items: center;
+
+        li {
+            margin: .7rem 0;
+            i {
+                font-size: 1.1rem;
+                padding: 0 6px;
+                color: $secondary-color;
+                vertical-align: middle;
+            }
         }
     }
 }

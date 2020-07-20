@@ -1,4 +1,4 @@
-import { Directive, ElementRef, EventEmitter, OnDestroy, AfterViewInit, Output } from '@angular/core';
+import { Directive, ElementRef, EventEmitter, OnDestroy, AfterViewInit, Output, HostBinding, Input } from '@angular/core';
 import { Subscription, fromEvent } from 'rxjs';
 import { startWith } from 'rxjs/operators';
 
@@ -41,7 +41,7 @@ export class ScrollAppearDirective implements AfterViewInit, OnDestroy {
 
   checkVisibility() {
     if (this.isVisible()) {
-      // double check dimensions (due to async loaded contents, e.g. images)
+      // double check dimensions (due to async loaded contents)
       this.saveDimensions();
       if (this.isVisible()) {
         this.unsubscribe();
@@ -66,6 +66,7 @@ export class ScrollAppearDirective implements AfterViewInit, OnDestroy {
         this.checkVisibility();
       });
   }
+
   unsubscribe() {
     if (this.subscriptionScroll) {
       this.subscriptionScroll.unsubscribe();
@@ -82,5 +83,4 @@ export class ScrollAppearDirective implements AfterViewInit, OnDestroy {
   ngOnDestroy() {
     this.unsubscribe();
   }
-
 }

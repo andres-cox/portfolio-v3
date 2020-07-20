@@ -6,8 +6,16 @@ import { Directive, HostBinding, HostListener } from '@angular/core';
 export class NavScrollDirective {
   @HostBinding('style.top') top: string = '0px';
   @HostBinding('style.boxShadow') boxShadow: string = 'none';
+  @HostBinding('@.disabled') animation: boolean = false;
 
   prevScrollpos = window.pageYOffset;
+
+  ngOnInit(): void {
+    const windowSize = window.innerWidth;
+
+    this.animation = (windowSize < 768) ? true : false;
+
+  }
 
   @HostListener('window:scroll', ['$event']) scrollEvent(event: Event) {
     let currentScrollPos = window.pageYOffset;

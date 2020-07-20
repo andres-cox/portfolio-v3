@@ -33,9 +33,12 @@
     }
 
     &__content {
-        font-size: 1.5rem;
         color: $body-color;
         margin: 1rem 0;
+        p {
+            font-size: 1.8rem;
+
+        }
     }
 
     &__technologies {
@@ -44,7 +47,7 @@
         list-style: none;
         
         li {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             color: $secondary-color;
             padding: 2px;
         }
@@ -71,8 +74,10 @@
         li {
             z-index: 10;
             margin: 3px;
+            
             i {
                 font-size: 2.7rem;
+                color: $tertiary-color;
             }
         }
     }
@@ -111,19 +116,37 @@
             padding: 10px;
             border-radius: 5px;
             box-shadow: 3px 3px 20px rgba(0, 0, 0, .5);
+            
+            p {
+                font-size: 1.9rem;
+            }
 
         }
         
         &__technologies {
             justify-content: flex-start;
 
+            li {
+                font-size: 1.5rem;
+            }
+
         }
 
         &__links { 
             flex-direction: column-reverse;
             align-items: flex-start;
+
+            
             a {
                 margin: .7rem 0;
+            }
+
+            li {
+                a{
+                    color: $tertiary-color;
+                    margin: 0;
+
+                }
             }
         }
 

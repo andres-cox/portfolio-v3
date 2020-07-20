@@ -1,5 +1,5 @@
 <header>
-    <nav [@nav] appNavScroll [ngClass]="{'open': openSideNavbar == true}" class="nav">
+    <nav [@nav] [@.disabled] appNavScroll [ngClass]="{'open': openSideNavbar == true}" class="nav">
         <div (click)="showNav()" class="menu-toggle">
             <i class="fas fa-bars"></i>
             <i class="fas fa-times"></i>
