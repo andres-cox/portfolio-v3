@@ -1,0 +1,45 @@
+[
+    {
+        "subheadline": "Frontend Project",
+        "headline": "Movies PWA",
+        "description": "It's a website where you find movie recommentations its details and nominations",
+        "technologies": [
+            "Ionic",
+            "TMDB API",
+            "Wikipedia API",
+            "JustWatch API"
+        ],
+        "github": "http:dasd",
+        "website": "http:web"
+    },
+    {
+        "subheadline": "Frontend & Backend Project",
+        "headline": "Managament Web",
+        "description": "It's an administration website in which you can see all employees data and what projects they are in",
+        "technologies": [
+            "Angular",
+            "Bootstrap",
+            "GraphQL",
+            "NodeJS",
+            "Mongo",
+            "Docker"
+        ],
+        "github": "http:dasd",
+        "website": "http:web"
+    },
+    {
+        "subheadline": "Frontend Project",
+        "headline": "Turism Web",
+        "description": "It's an administration website in which you can see all employees data and what projects they are in",
+        "technologies": [
+            "Angular",
+            "Bootstrap",
+            "GraphQL",
+            "NodeJS",
+            "Mongo",
+            "Docker"
+        ],
+        "github": "http:dasd",
+        "website": "http:web"
+    }
+]

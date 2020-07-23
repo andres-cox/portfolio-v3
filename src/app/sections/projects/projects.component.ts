@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../../services/data.service';
+import { Observable } from 'rxjs';
+import { ISoftProject } from 'src/app/models/soft-project.interface';
 
 @Component({
   selector: 'app-projects',
@@ -6,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
-  constructor() { }
+  softProjects: Observable<ISoftProject[]>;
+  constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
+    this.softProjects = this.dataService.getSoftProjects();
   }
 
 }

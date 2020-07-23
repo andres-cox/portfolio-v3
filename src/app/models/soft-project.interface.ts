@@ -1,6 +1,6 @@
 export interface ISoftProject {
     subheadline: string,
-    title: string,
+    headline: string,
     description: string,
     technologies: string[],
     github: string,

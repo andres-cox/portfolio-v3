@@ -2,7 +2,7 @@ import { ISoftProject } from './soft-project.interface';
 
 export class SoftProject implements ISoftProject {
     subheadline: string;
-    title: string;
+    headline: string;
     description: string;
     technologies: string[];
     github: string;
@@ -10,14 +10,14 @@ export class SoftProject implements ISoftProject {
 
     constructor(
         subheadline: string,
-        title: string,
+        headline: string,
         description: string,
         technologies: string[],
         github: string,
         website: string
     ) {
         this.subheadline = subheadline
-        this.title = title
+        this.headline = headline
         this.description = description
         this.technologies = technologies
         this.github = github
