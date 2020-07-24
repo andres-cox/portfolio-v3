@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ISoftProject } from '../models/soft-project.interface';
 import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -16,10 +17,6 @@ export class DataService {
 
   getSoftProjectDetails(title: string) {
     const projects = this.http.get<ISoftProject[]>('assets/data/soft-projects.json');
-    projects.subscribe(res => {
-      const test = res.find(project => project.headline == title)
-      console.log(test);
-    })
-
+    return projects.pipe(map(res => res.find(project => project.headline == title).details))
   }
 }

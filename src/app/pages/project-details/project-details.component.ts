@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { SwiperConfigInterface, SwiperScrollbarInterface, SwiperPaginationInterface, SwiperComponent, SwiperDirective } from 'ngx-swiper-wrapper';
 import { ActivatedRoute } from '@angular/router';
 import { DataService } from 'src/app/services/data.service';
-
+import { ISoftProjectDetails } from '../../models/soft-project.interface'
 
 @Component({
   selector: 'app-project-details',
@@ -11,18 +11,11 @@ import { DataService } from 'src/app/services/data.service';
 })
 export class ProjectDetailsComponent implements OnInit {
 
-  public slides = [
-    'assets/management-app/home.png',
-    'assets/management-app/add-employee.png',
-    'assets/management-app/employees-list.png',
-    'assets/management-app/auth-passed.png',
-    'assets/management-app/sign-up.png',
-    'assets/management-app/validation.png'
-  ];
+  slides: string[];
 
-  public disabled: boolean = false;
+  disabled: boolean = false;
 
-  public config: SwiperConfigInterface = {
+  config: SwiperConfigInterface = {
     a11y: true,
     direction: 'horizontal',
     slidesPerView: 1,
@@ -52,6 +45,7 @@ export class ProjectDetailsComponent implements OnInit {
   //   clickable: true,
   //   hideOnClick: false
   // };
+  project: ISoftProjectDetails;
 
   @ViewChild(SwiperComponent, { static: false }) componentRef?: SwiperComponent;
   @ViewChild(SwiperDirective, { static: false }) directiveRef?: SwiperDirective;
@@ -63,8 +57,11 @@ export class ProjectDetailsComponent implements OnInit {
 
   ngOnInit(): void {
     const headline = this.route.snapshot.paramMap.get("headline");
-    this.dataService.getSoftProjectDetails(headline);
-
+    this.dataService.getSoftProjectDetails(headline).subscribe(res => {
+      this.project = res;
+      this.slides = res.images;
+    });
+    // this.project.subscribe(res => console.log(res.title))
   }
 
 }

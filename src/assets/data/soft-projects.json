@@ -14,7 +14,27 @@
         "website": "http:web",
         "details": {
             "title": "Discover Movies Details",
-            "summary": "A made this app for my self, I wanted to have all movies data in my hand and get its data as easy as posible. I always had to look for movies by my self, looking in webpages, youtube videos. But those often aren't good enough for me"
+            "summary": "I made this app for my self, I wanted to have all movies data in my hand and get its information as easy as posible. I always had to look for movies by my self, looking in webpages and youtube videos. But those often weren't good enough for me. So I created this app in order to find movies easely. Looking for movies by actor and check if they have awards and nominations. I also wanted to check if they were available in streaming platforms for that I use Justwatch API but unfortunatly we can use it just in local do to its CORS policy.",
+            "images": [
+                "assets/management-app/home.png",
+                "assets/management-app/employees-list.png",
+                "assets/management-app/assignments.png",
+                "assets/management-app/auth-passed.png",
+                "assets/management-app/remove-employee.png"
+            ],
+            "cards": [
+                {
+                    "subtitle": "The Idea",
+                    "text": "This is a description text",
+                    "image": "assets/images/moviesPwa.png"
+                },
+                {
+                    "subtitle": "The Idea",
+                    "text": "This is a description text I wanted to have all movies data in my hand and get its information as easy as posible. I always had to look for movies by my self, looking in webpages and youtube videos. But those often weren't good enough for me. So I created this app in order to find movies easely. Looking for movies by actor and check if they have awards and nominations. I also wanted to check if they were available in s",
+                    "image": "assets/images/moviesPwa.png"
+                }
+            ],
+            "conclusion": "This was a very cool app I use it all the time, and because of that I improve it every day"
         }
     },
     {

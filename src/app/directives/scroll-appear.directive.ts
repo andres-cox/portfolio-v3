@@ -1,4 +1,4 @@
-import { Directive, ElementRef, EventEmitter, OnDestroy, AfterViewInit, Output, HostBinding, Input } from '@angular/core';
+import { Directive, ElementRef, EventEmitter, OnDestroy, AfterViewInit, Output, HostBinding } from '@angular/core';
 import { Subscription, fromEvent } from 'rxjs';
 import { startWith } from 'rxjs/operators';
 

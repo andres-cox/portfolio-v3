@@ -1,65 +1,22 @@
-<swiper class="swiper-container" [disabled]="disabled" [config]="config" fxFlex="auto">
-    <div *ngFor="let slide of slides" class="swiper-slide">
-        <img [src]="slide">
-    </div>
-</swiper>
-
 <div class="project">
+    <swiper class="swiper-container" [disabled]="disabled" [config]="config" fxFlex="auto">
+        <div *ngFor="let slide of slides" class="swiper-slide">
+            <img [src]="slide">
+        </div>
+    </swiper>
     <div class="container">
-        <h2 class="project__title">Project title</h2>
-        <p class="project__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique incidunt
-            quia
-            natus minus dolorem, iure quis
-            sapiente veritatis a enim, dignissimos ipsum aut quas perferendis error iste non vel corrupti? Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Quibusdam, repellendus sunt consequuntur ducimus blanditiis
-            expedita voluptate accusantium ut voluptatum iste tempore molestias animi doloremque. Exercitationem
-            excepturi itaque aut nisi distinctio.</p>
+        <h2 class="project__title">{{ project.title }}</h2>
+        <p class="project__description">{{ project.summary }}</p>
         <div class="project__cards">
-            <div class="card">
-                <img class="card__image" src="assets/management-app/employees-list.png">
+            <div class="card" *ngFor="let card of project.cards">
+                <img class="card__image" [src]="card.image">
                 <div class="card__content">
-                    <h3 class="card__title">Using NgRx</h3>
-                    <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sit
-                        commodi
-                        aliquam
-                        itaque consequuntur natus, deserunt fugit beatae eos, suscipit enim illo similique deleniti
-                        dignissimos
-                        quae aasd
-                        debitis ipsum. Eius, consequuntur!</p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card__image" src="assets/management-app/employees-list.png">
-                <div class="card__content">
-                    <h3 class="card__title">Using NgRx</h3>
-                    <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sit
-                        commodi
-                        aliquam
-                        itaque consequuntur natus, deserunt fugit beatae eos, suscipit enim illo similique deleniti
-                        dignissimos
-                        quae
-                        debitis ipsum. Eius, consequuntur!</p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card__image" src="assets/management-app/employees-list.png">
-                <div class="card__content">
-                    <h3 class="card__title">Using NgRx</h3>
-                    <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sit
-                        commodi
-                        aliquam
-                        itaque consequuntur natus, deserunt fugit beatae eos, suscipit enim illo similique deleniti
-                        dignissimos
-                        quae
-                        debitis ipsum. Eius, consequuntur!</p>
+                    <h3 class="card__title">{{ card.subtitle }}</h3>
+                    <p class="card__description">{{ card.text }}</p>
                 </div>
             </div>
         </div>
-
         <h2 class="project__title">Comments</h2>
-        <p class="project__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique incidunt
-            quia
-            natus minus dolorem, iure quis
-            sapiente veritatis a enim, dignissimos ipsum aut quas perferendis error iste non vel corrupti?</p>
+        <p class="project__description">{{ project.conclusion }}</p>
     </div>
 </div>
