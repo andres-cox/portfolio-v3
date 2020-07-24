@@ -13,4 +13,13 @@ export class DataService {
   getSoftProjects(): Observable<ISoftProject[]> {
     return this.http.get<ISoftProject[]>('assets/data/soft-projects.json');
   }
+
+  getSoftProjectDetails(title: string) {
+    const projects = this.http.get<ISoftProject[]>('assets/data/soft-projects.json');
+    projects.subscribe(res => {
+      const test = res.find(project => project.headline == title)
+      console.log(test);
+    })
+
+  }
 }

@@ -3,6 +3,7 @@
         "subheadline": "Frontend Project",
         "headline": "Movies PWA",
         "description": "It's a website where you find movie recommentations its details and nominations",
+        "image": "assets/images/moviesPwa.png",
         "technologies": [
             "Ionic",
             "TMDB API",
@@ -10,12 +11,17 @@
             "JustWatch API"
         ],
         "github": "http:dasd",
-        "website": "http:web"
+        "website": "http:web",
+        "details": {
+            "title": "Discover Movies Details",
+            "summary": "A made this app for my self, I wanted to have all movies data in my hand and get its data as easy as posible. I always had to look for movies by my self, looking in webpages, youtube videos. But those often aren't good enough for me"
+        }
     },
     {
         "subheadline": "Frontend & Backend Project",
         "headline": "Managament Web",
-        "description": "It's an administration website in which you can see all employees data and what projects they are in",
+        "description": "It's an administration website in which you can see all employees data and what projects they are in.",
+        "image": "assets/images/managementWeb.png",
         "technologies": [
             "Angular",
             "Bootstrap",
@@ -30,14 +36,37 @@
     {
         "subheadline": "Frontend Project",
         "headline": "Turism Web",
-        "description": "It's an administration website in which you can see all employees data and what projects they are in",
+        "description": "It's an informative page of Tarija in which you get informed of some places of the city.",
+        "image": "assets/images/turismWeb.png",
         "technologies": [
             "Angular",
+            "SCSS",
+            "ngx-translate"
+        ],
+        "github": "http:dasd",
+        "website": "http:web"
+    },
+    {
+        "subheadline": "Frontend Project",
+        "headline": "News PWA",
+        "description": "An informative page where you find news from other countries",
+        "image": "assets/images/newsPwa.png",
+        "technologies": [
+            "Ionic",
+            "News API"
+        ],
+        "github": "http:dasd",
+        "website": "http:web"
+    },
+    {
+        "subheadline": "Backend Project",
+        "headline": "E-commerce Web",
+        "description": "Basic e-commerce page with few products",
+        "image": "assets/images/ecommerceWeb.png",
+        "technologies": [
+            "Laravel",
             "Bootstrap",
-            "GraphQL",
-            "NodeJS",
-            "Mongo",
-            "Docker"
+            "MySQL"
         ],
         "github": "http:dasd",
         "website": "http:web"

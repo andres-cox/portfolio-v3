@@ -9,7 +9,7 @@
             <li *ngFor="let tech of project.technologies">{{tech}}</li>
         </ul>
         <ul class="card__links">
-            <a [routerLink]="['/details']" class="btn btn-primary">Details</a>
+            <a [routerLink]="['/details', project.headline]" class="btn btn-primary">Details</a>
             <div class="links">
                 <li><a [href]="project.github"><i class="fab fa-github"></i></a></li>
                 <li><a [href]="project.website"><i class="fas fa-external-link-alt"></i></a></li>
@@ -17,6 +17,6 @@
         </ul>
     </div>
     <div class="card__image" [@fadeRight]='state'>
-        <a href=""><img src="assets/management-app/home.png"></a>
+        <a href=""><img [src]="project.image"></a>
     </div>
 </div>

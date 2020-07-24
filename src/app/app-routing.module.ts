@@ -6,7 +6,7 @@ import { ProjectDetailsComponent } from './pages/project-details/project-details
 
 const routes: Routes = [
   { path: '', component: WelcomeComponent },
-  { path: 'details', component: ProjectDetailsComponent }
+  { path: 'details/:headline', component: ProjectDetailsComponent }
 ];
 
 @NgModule({

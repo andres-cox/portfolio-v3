@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { SwiperConfigInterface, SwiperScrollbarInterface, SwiperPaginationInterface, SwiperComponent, SwiperDirective } from 'ngx-swiper-wrapper';
+import { ActivatedRoute } from '@angular/router';
+import { DataService } from 'src/app/services/data.service';
 
 
 @Component({
@@ -54,9 +56,15 @@ export class ProjectDetailsComponent implements OnInit {
   @ViewChild(SwiperComponent, { static: false }) componentRef?: SwiperComponent;
   @ViewChild(SwiperDirective, { static: false }) directiveRef?: SwiperDirective;
 
-  constructor() { }
+  constructor(
+    private route: ActivatedRoute,
+    private dataService: DataService
+  ) { }
 
   ngOnInit(): void {
+    const headline = this.route.snapshot.paramMap.get("headline");
+    this.dataService.getSoftProjectDetails(headline);
+
   }
 
 }
