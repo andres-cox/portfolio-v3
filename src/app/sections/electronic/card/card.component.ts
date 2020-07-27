@@ -15,7 +15,6 @@ export class CardComponent implements OnInit {
   }
 
   onAppear() {
-    this.state = (this.state === 'inactive' ? 'active' : 'inactive');
-    console.log(this.state);
+    this.state = 'active';
   }
 }

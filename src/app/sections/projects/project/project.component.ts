@@ -20,6 +20,6 @@ export class ProjectComponent implements OnInit {
   }
 
   onAppear() {
-    this.state = (this.state === 'inactive' ? 'active' : 'inactive');
+    this.state = 'active';
   }
 }
