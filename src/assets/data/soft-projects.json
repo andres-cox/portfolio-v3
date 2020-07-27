@@ -55,6 +55,7 @@
         "technologies": [
             "Angular",
             "Bootstrap",
+            "Firebase",
             "GraphQL",
             "NodeJS",
             "Mongo",
@@ -84,6 +85,11 @@
                     "image": "assets/images/moviesPwa.png"
                 },
                 {
+                    "subtitle": "Firebase",
+                    "text": "I used firebase for authentication in order to get admin operations. At the beginning I used this platform for my backend to save the data and the status of the employees. It's nice tool to have and the steps of deploying an web in this site are very simple. I'll look deeper for other projects, but for this web it was just for the sign in form",
+                    "image": "assets/images/moviesPwa.png"
+                },
+                {
                     "subtitle": "GraphQL",
                     "text": "Once finished the frontend I wanted to start learning the backend, and then my mentor recommend me to learn GraphQL because it is a modern technology and when I started learning it I saw why it was necessary. Most of the time REST APIs build queries and in the frontend, when we use it we get some unnecessary data that we can't avoid, so with the response we select the attributes and create some filters. With GraphQL this is easier because its queries are customizable and we get the data we really need preventing unnecessary code in the frontend.",
                     "image": "assets/images/moviesPwa.png"
@@ -94,13 +100,13 @@
                     "image": "assets/images/moviesPwa.png"
                 }
             ],
-            "conclusion": "This is a useful app, I really enjoyed doing it. It was a great experience with different APIs. And I use it every time I don't know what to watch and to find past interesting movies, not just the trends."
+            "conclusion": "Since this is one of my first projects, I learned too much doing it and I am proud of it. With this project I figure out that Angular is a very complex framework; when you want to create a new funtionality, a new page or other thing, it takes some steps to make it, but it's because it forces you to follow good paterns and create an scalable project. I am still watching to this project as a test view to implement new things seen how difficult could be to implement new things for the purpose of growing and to have a guide for future projects."
         }
     },
     {
         "subheadline": "Frontend Project",
         "headline": "Turism Web",
-        "description": "It's an informative page of Tarija in which you get informed of some places of the city.",
+        "description": "This is a page for testing design skills, with a custom SCSS theme. With ngx-translate to suport languages. Created for a city of Bolivia.",
         "image": "assets/images/turismWeb.png",
         "technologies": [
             "Angular",
@@ -108,7 +114,31 @@
             "ngx-translate"
         ],
         "github": "http:dasd",
-        "website": "http:web"
+        "website": "http:web",
+        "details": {
+            "title": "An Informative page for Tarija",
+            "summary": "Once I learned Angular with previous projects I decided to create this page because of an idea in the past. So I create in this with purpose of creating an informative page with real data and maybe use it in the future. Tarija is one of the more beautiful cities in Bolivia, it's a very silent city, its food and people are great. They have many interesting customs that I wanted to share.",
+            "images": [
+                "assets/management-app/home.png",
+                "assets/management-app/employees-list.png",
+                "assets/management-app/assignments.png",
+                "assets/management-app/auth-passed.png",
+                "assets/management-app/remove-employee.png"
+            ],
+            "cards": [
+                {
+                    "subtitle": "The Design and Data",
+                    "text": "As an informative page it took me some hours to find really good information to share, here in Bolivia we don't have many pages like this, there are only articles from reports and news. For the design I watch many websites until I found something simple we good looking. Then I decided to create this page with 4 sections (welcome, places, events, map) like most websites.",
+                    "image": "assets/images/moviesPwa.png"
+                },
+                {
+                    "subtitle": "Google Maps",
+                    "text": "Recently google maps API changed its politics and now you the requests are limited and you have to register your credit card. Of course the requests limited it's enough for this web but then I decided to go for an easier way which involves iframes tags that most sites uses in these cases. I think this isn't a cleaner way for this but for now it is just OK. I think there are web that really needs more functionality with maps, but this was not the case.",
+                    "image": "assets/images/moviesPwa.png"
+                }
+            ],
+            "conclusion": "Sincerely I am not quiet satisfied with this web, the design is nice but not the best. Since the design practice was the main purpose of this web I believe I just an step in the path of creating good looking websites."
+        }
     },
     {
         "subheadline": "Frontend Project",
