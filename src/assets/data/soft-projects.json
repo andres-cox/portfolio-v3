@@ -133,7 +133,7 @@
                 },
                 {
                     "subtitle": "Google Maps",
-                    "text": "Recently google maps API changed its politics and now you the requests are limited and you have to register your credit card. Of course the requests limited it's enough for this web but then I decided to go for an easier way which involves iframes tags that most sites uses in these cases. I think this isn't a cleaner way for this but for now it is just OK. I think there are web that really needs more functionality with maps, but this was not the case.",
+                    "text": "Recently google maps API changed its politics and now you the requests are limited and you have to register your credit card. Of course the requests limited it's enough for this web but then I decided to go for an easier way which involves iframes tags that most sites uses in these cases and I use it with an ngSwitch. I think this isn't a cleaner way for this but for now it is just OK. I think there are web that really needs more functionality with maps, but this was not the case.",
                     "image": "assets/images/moviesPwa.png"
                 }
             ],
@@ -150,7 +150,31 @@
             "News API"
         ],
         "github": "http:dasd",
-        "website": "http:web"
+        "website": "http:web",
+        "details": {
+            "title": "An Informative page for Tarija",
+            "summary": "This is my first page testing with API, I create this app from a tutorial learning Ionic and upgrated with some functionality I wanted to have. ",
+            "images": [
+                "assets/management-app/home.png",
+                "assets/management-app/employees-list.png",
+                "assets/management-app/assignments.png",
+                "assets/management-app/auth-passed.png",
+                "assets/management-app/remove-employee.png"
+            ],
+            "cards": [
+                {
+                    "subtitle": "The Design and Data",
+                    "text": "As an informative page it took me some hours to find really good information to share, here in Bolivia we don't have many pages like this, there are only articles from reports and news. For the design I watch many websites until I found something simple we good looking. Then I decided to create this page with 4 sections (welcome, places, events, map) like most websites.",
+                    "image": "assets/images/moviesPwa.png"
+                },
+                {
+                    "subtitle": "Google Maps",
+                    "text": "Recently google maps API changed its politics and now you the requests are limited and you have to register your credit card. Of course the requests limited it's enough for this web but then I decided to go for an easier way which involves iframes tags that most sites uses in these cases and I use it with an ngSwitch. I think this isn't a cleaner way for this but for now it is just OK. I think there are web that really needs more functionality with maps, but this was not the case.",
+                    "image": "assets/images/moviesPwa.png"
+                }
+            ],
+            "conclusion": "Sincerely I am not quiet satisfied with this web, the design is nice but not the best. Since the design practice was the main purpose of this web I believe I just an step in the path of creating good looking websites."
+        }
     },
     {
         "subheadline": "Backend Project",
@@ -163,6 +187,30 @@
             "MySQL"
         ],
         "github": "http:dasd",
-        "website": "http:web"
+        "website": "http:web",
+        "details": {
+            "title": "An Informative page for Tarija",
+            "summary": "Once I learned Angular with previous projects I decided to create this page because of an idea in the past. So I create in this with purpose of creating an informative page with real data and maybe use it in the future. Tarija is one of the more beautiful cities in Bolivia, it's a very silent city, its food and people are great. They have many interesting customs that I wanted to share.",
+            "images": [
+                "assets/management-app/home.png",
+                "assets/management-app/employees-list.png",
+                "assets/management-app/assignments.png",
+                "assets/management-app/auth-passed.png",
+                "assets/management-app/remove-employee.png"
+            ],
+            "cards": [
+                {
+                    "subtitle": "The Design and Data",
+                    "text": "As an informative page it took me some hours to find really good information to share, here in Bolivia we don't have many pages like this, there are only articles from reports and news. For the design I watch many websites until I found something simple we good looking. Then I decided to create this page with 4 sections (welcome, places, events, map) like most websites.",
+                    "image": "assets/images/moviesPwa.png"
+                },
+                {
+                    "subtitle": "Google Maps",
+                    "text": "Recently google maps API changed its politics and now you the requests are limited and you have to register your credit card. Of course the requests limited it's enough for this web but then I decided to go for an easier way which involves iframes tags that most sites uses in these cases. I think this isn't a cleaner way for this but for now it is just OK. I think there are web that really needs more functionality with maps, but this was not the case.",
+                    "image": "assets/images/moviesPwa.png"
+                }
+            ],
+            "conclusion": "Sincerely I am not quiet satisfied with this web, the design is nice but not the best. Since the design practice was the main purpose of this web I believe I just an step in the path of creating good looking websites."
+        }
     }
 ]
