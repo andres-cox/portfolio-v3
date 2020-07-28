@@ -179,7 +179,7 @@
     {
         "subheadline": "Backend Project",
         "headline": "E-commerce Web",
-        "description": "Basic e-commerce page with few products",
+        "description": "Basic e-commerce page with few products and a cart funtionality",
         "image": "assets/images/ecommerceWeb.png",
         "technologies": [
             "Laravel",
@@ -189,8 +189,8 @@
         "github": "http:dasd",
         "website": "http:web",
         "details": {
-            "title": "An Informative page for Tarija",
-            "summary": "Once I learned Angular with previous projects I decided to create this page because of an idea in the past. So I create in this with purpose of creating an informative page with real data and maybe use it in the future. Tarija is one of the more beautiful cities in Bolivia, it's a very silent city, its food and people are great. They have many interesting customs that I wanted to share.",
+            "title": "Learning a new Framework",
+            "summary": "Laravel is one of the most popular frameworks of php. I wanted to test how hard is to learn a new framework once I learned Angular. Coming from Javascript, PHP is a very different language so there was a lot to learn.",
             "images": [
                 "assets/management-app/home.png",
                 "assets/management-app/employees-list.png",
@@ -200,12 +200,17 @@
             ],
             "cards": [
                 {
-                    "subtitle": "The Design and Data",
-                    "text": "As an informative page it took me some hours to find really good information to share, here in Bolivia we don't have many pages like this, there are only articles from reports and news. For the design I watch many websites until I found something simple we good looking. Then I decided to create this page with 4 sections (welcome, places, events, map) like most websites.",
+                    "subtitle": "In the frontend",
+                    "text": "I didn't want to complain very much in the frontend, since php is a backend language. I used Bootstrap and a nice tool from Laravel called blade templates, in which you can create components, layouts and pages. So it has the basic funtionality and there is an easy way to implement Vue which is a JS framework.",
                     "image": "assets/images/moviesPwa.png"
                 },
                 {
-                    "subtitle": "Google Maps",
+                    "subtitle": "Files organization",
+                    "text": "Recently google maps API changed its politics and now you the requests are limited and you have to register your credit card. Of course the requests limited it's enough for this web but then I decided to go for an easier way which involves iframes tags that most sites uses in these cases. I think this isn't a cleaner way for this but for now it is just OK. I think there are web that really needs more functionality with maps, but this was not the case.",
+                    "image": "assets/images/moviesPwa.png"
+                },
+                {
+                    "subtitle": "In the Backend",
                     "text": "Recently google maps API changed its politics and now you the requests are limited and you have to register your credit card. Of course the requests limited it's enough for this web but then I decided to go for an easier way which involves iframes tags that most sites uses in these cases. I think this isn't a cleaner way for this but for now it is just OK. I think there are web that really needs more functionality with maps, but this was not the case.",
                     "image": "assets/images/moviesPwa.png"
                 }
