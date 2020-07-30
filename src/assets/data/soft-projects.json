@@ -169,7 +169,7 @@
                 },
                 {
                     "subtitle": "Google Maps",
-                    "text": "Recently google maps API changed its politics and now you the requests are limited and you have to register your credit card. Of course the requests limited it's enough for this web but then I decided to go for an easier way which involves iframes tags that most sites uses in these cases and I use it with an ngSwitch. I think this isn't a cleaner way for this but for now it is just OK. I think there are web that really needs more functionality with maps, but this was not the case.",
+                    "text": "Recently google maps API changed its politics and now requests are limited and you have to register your credit card. Of course the requests limited it's enough for this web but then I decided to go for an easier way which involves iframes tags that most sites uses in these cases and I use it with an ngSwitch. I think this isn't a cleaner way for this but for now it is just OK. I think there are web that really needs more functionality with maps, but this was not the case.",
                     "image": "assets/images/moviesPwa.png"
                 }
             ],
@@ -205,17 +205,17 @@
                     "image": "assets/images/moviesPwa.png"
                 },
                 {
-                    "subtitle": "Files organization",
-                    "text": "Recently google maps API changed its politics and now you the requests are limited and you have to register your credit card. Of course the requests limited it's enough for this web but then I decided to go for an easier way which involves iframes tags that most sites uses in these cases. I think this isn't a cleaner way for this but for now it is just OK. I think there are web that really needs more functionality with maps, but this was not the case.",
+                    "subtitle": "Laravel",
+                    "text": "Laravel is an MVC framework, it has folders for views, routes, controlers and so on. The main advantage is that you have direct control to your database by mysql queries, you can have the frontend work directly without an API for an easy way Laravel has a custom style code to interact.",
                     "image": "assets/images/moviesPwa.png"
                 },
                 {
                     "subtitle": "In the Backend",
-                    "text": "Recently google maps API changed its politics and now you the requests are limited and you have to register your credit card. Of course the requests limited it's enough for this web but then I decided to go for an easier way which involves iframes tags that most sites uses in these cases. I think this isn't a cleaner way for this but for now it is just OK. I think there are web that really needs more functionality with maps, but this was not the case.",
+                    "text": "With Laravel you have custom commands to create database, tables, queries files. Or create an squema file and then migrate it. Since this framework is based for backend you have other commands like authentication in order to create a fast functional start",
                     "image": "assets/images/moviesPwa.png"
                 }
             ],
-            "conclusion": "Sincerely I am not quiet satisfied with this web, the design is nice but not the best. Since the design practice was the main purpose of this web I believe I just an step in the path of creating good looking websites."
+            "conclusion": "I didn't dive deeper in this framework, this was a test to see how difficult would be to learn a new framework from scratch. "
         }
     }
 ]
