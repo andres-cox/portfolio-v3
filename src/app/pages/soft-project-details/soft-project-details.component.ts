@@ -5,11 +5,11 @@ import { DataService } from 'src/app/services/data.service';
 import { ISoftProjectDetails } from '../../models/soft-project.interface'
 
 @Component({
-  selector: 'app-project-details',
-  templateUrl: './project-details.component.html',
-  styleUrls: ['./project-details.component.scss']
+  selector: 'app-soft-project-details',
+  templateUrl: './soft-project-details.component.html',
+  styleUrls: ['./soft-project-details.component.scss']
 })
-export class ProjectDetailsComponent implements OnInit {
+export class SoftProjectDetailsComponent implements OnInit {
 
   slides: string[];
 
@@ -57,11 +57,15 @@ export class ProjectDetailsComponent implements OnInit {
 
   ngOnInit(): void {
     const headline = this.route.snapshot.paramMap.get("headline");
+    console.log(headline);
     this.dataService.getSoftProjectDetails(headline).subscribe(res => {
+      this.project = res;
+      this.slides = res.images;
+    });
+    this.dataService.getElectronicProjectDetails(headline).subscribe(res => {
       this.project = res;
       this.slides = res.images;
     });
     // this.project.subscribe(res => console.log(res.title))
   }
-
 }

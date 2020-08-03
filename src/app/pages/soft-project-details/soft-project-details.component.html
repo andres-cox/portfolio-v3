@@ -1,0 +1,22 @@
+<div class="project">
+    <swiper class="swiper-container" [disabled]="disabled" [config]="config" fxFlex="auto">
+        <div *ngFor="let slide of slides" class="swiper-slide">
+            <img [src]="slide">
+        </div>
+    </swiper>
+    <div class="container">
+        <h2 class="project__title">{{ project.title }}</h2>
+        <p class="project__description">{{ project.summary }}</p>
+        <div class="project__cards">
+            <div class="card" *ngFor="let card of project.cards">
+                <img class="card__image" [src]="card.image">
+                <div class="card__content">
+                    <h3 class="card__title">{{ card.subtitle }}</h3>
+                    <p class="card__description">{{ card.text }}</p>
+                </div>
+            </div>
+        </div>
+        <h2 class="project__title">Comments</h2>
+        <p class="project__description">{{ project.conclusion }}</p>
+    </div>
+</div>

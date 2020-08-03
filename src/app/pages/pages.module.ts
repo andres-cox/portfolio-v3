@@ -1,15 +1,17 @@
 import { NgModule, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { SectionsModule } from '../sections/sections.module';
 import { ComponentsModule } from '../components/components.module';
 import { SwiperModule } from 'ngx-swiper-wrapper';
+import { ElecProjectDetailsComponent } from './elec-project-details/elec-project-details.component';
+import { SoftProjectDetailsComponent } from './soft-project-details/soft-project-details.component';
 
 @NgModule({
   declarations: [
-    ProjectDetailsComponent,
     WelcomeComponent,
+    ElecProjectDetailsComponent,
+    SoftProjectDetailsComponent,
   ],
   imports: [
     CommonModule,

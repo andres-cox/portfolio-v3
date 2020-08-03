@@ -1,0 +1,82 @@
+@import "variables";
+
+.swiper-container {
+    width: 100%;
+}
+
+.project {
+
+    &__title {
+        font-size: 2.7rem;
+        color: $secondary-color;
+        padding: 2.2rem 0;
+    }
+
+    &__description {
+        font-size: 2.4rem;
+        margin-bottom: 3rem;
+    }
+}
+
+.card {
+    margin: 4rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, .5);
+
+    &__title {
+        font-size: 2.4rem;
+        color: $secondary-color;
+    }
+
+    &__content {
+        padding: 1rem;
+    }
+
+    &__description {
+        padding: 1rem 0;
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    
+    swiper {
+        .swiper-container {
+            width: 100%;
+            height: auto;
+            
+            .swiper-slide {
+                height: 100%;
+                overflow: hidden;
+            }             
+            
+        }
+        
+        img {
+            object-fit: cover;
+            object-position: center;
+            max-height: 470px;
+        }
+    }
+
+    .card {
+        flex-wrap: nowrap;
+        
+        &__image {
+           width: 550px;
+        }
+
+        &__content {
+            padding: 2.5rem;
+        }
+    }
+
+    .card:nth-child(odd) {
+        flex-direction: row;
+    }
+
+    .card:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+}

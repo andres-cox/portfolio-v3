@@ -1,5 +1,24 @@
 export interface IElecProject {
-    title: string,
+    headline: string,
+    intro: string,
     description: string,
-    technologies: string,
+    image: string,
+    technologies: string[];
+    github: string;
+    website: string;
+    details: IElecProjectDetails;
+}
+
+export interface IElecProjectDetails {
+    title: string;
+    summary: string;
+    images: string[];
+    cards: Card[];
+    conclusion: string;
+}
+
+interface Card {
+    subtitle: string;
+    text: string;
+    image: string;
 }

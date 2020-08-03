@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { animations } from 'src/app/shared/animations';
+import { IElecProject } from 'src/app/models/elec-project.interface';
 
 @Component({
   selector: 'app-card',
@@ -8,6 +9,7 @@ import { animations } from 'src/app/shared/animations';
   animations: [animations]
 })
 export class CardComponent implements OnInit {
+  @Input() elecCard: IElecProject;
   state: string = 'inactive';
   constructor() { }
 

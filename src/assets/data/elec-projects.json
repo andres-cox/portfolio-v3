@@ -1,0 +1,165 @@
+[
+    {
+        "headline": "Sound Lights",
+        "intro": "An stage for Sergio Bulgakov with custom language to perform a concert",
+        "description": "It's a handmade stage with an own library to execute lights based in music. This project is for a Sitar musician Sergio",
+        "image": "assets/images/soundLights.jpg",
+        "technologies": [
+            "C",
+            "C++"
+        ],
+        "github": "https://github.com/andres-cox/SoundLights",
+        "artist-web": "http://www.bulgakov.com.ar/sergio/",
+        "details": {
+            "title": "Discover Movies Details",
+            "summary": "I made this app for my self, I wanted to have all movies data in my hand and get its information as easy as posible. I always had to look for movies by my self, looking in webpages and youtube videos. But those often weren't good enough for me. So I created this app in order to find movies easely. Looking for movies by actor and check if they have awards and nominations. I also wanted to check if they were available in streaming platforms for that I use Justwatch API but unfortunatly we can use it only in local do to its CORS policy.",
+            "images": [
+                "assets/soundLights/img01.jpg",
+                "assets/soundLights/img02.jpg",
+                "assets/soundLights/img03.jpg",
+                "assets/soundLights/img04.jpg",
+                "assets/soundLights/img05.jpg",
+                "assets/soundLights/img06.jpg",
+                "assets/soundLights/img07.jpg",
+                "assets/soundLights/img08.jpg",
+                "assets/soundLights/img09.jpg",
+                "assets/soundLights/img10.jpg",
+                "assets/soundLights/img11.jpg",
+                "assets/soundLights/img12.jpg",
+                "assets/soundLights/img13.jpg",
+                "assets/soundLights/img14.jpg",
+                "assets/soundLights/img15.jpg",
+                "assets/soundLights/img16.jpg",
+                "assets/soundLights/img17.jpg",
+                "assets/soundLights/img18.jpg",
+                "assets/soundLights/img19.jpg",
+                "assets/soundLights/img20.jpg"
+            ],
+            "cards": [
+                {
+                    "subtitle": "Tabs Design",
+                    "text": "I only wanted to have three tabs. Home tab is the welcome page in which we have the search bar, popular movies, tvshows and recomendations, these last one appear once we checked our favorite ones and it's based in TMDB api system. Discovery tab would be a place to find the most popular movies by year and genre. And the last tab for our personal list for movies. The ones we have seen, favorites and to watch.",
+                    "image": "assets/images/moviesPwa.png"
+                },
+                {
+                    "subtitle": "The Movie Database API",
+                    "text": "This API is very popular it's used in many other sides, so I wanted to try it as well. When I checked its documentation I saw that it was very organized and it had most of the functionality I was looking for, movie details, recomendations, actor movies and so on. Then I realized that it hasn't have actor's tvshows as a basic query so I had to implement a search query, that has its disadvantage, because the response isn't quite clean and I had to make some filters in order to have the results I was expecting. I finished all the app based in just this API, then I wanted to move forward to implement nominations details and streaming availability that this API don't offer.",
+                    "image": "assets/images/moviesPwa.png"
+                },
+                {
+                    "subtitle": "Wikipedia API",
+                    "text": "Once we have seen an organized API, Wikipedia give me some good hours to study, this API is very complex. Before this API I was looking for a more specific API for movie nominations but I couldn't find a good one. So I decided to use Wikipedia because is like an open encyclopedia, and maybe it'll be useful for another future project. When I look more deep into it, I saw that it has multiple queries and it hasn't have as good examples as I wanted, but well it's just a new tool to learn so I studied all its options and finally I could create the query I wanted, the one that returns movie nominations. But it's not as clean as I would like, because in order to exact table of a movie page I have to request two queries. One for seeking nominations section and the other to extract the html of that table, there is a way to do it in just one query but now it comes the second problem, I look for movie queries based in its title (tmdb title) because there isn't id relation, so we have the title and it works for most of the movies, but for those that don't, we have to create another query, you can see in the image the queries I had to create in order to have most of the movies nominations details. I still think it's not a clean solution but it works, and that is all I wanted.",
+                    "image": "assets/images/moviesPwa.png"
+                },
+                {
+                    "subtitle": "Justwatch API",
+                    "text": "Justwatch is the only site in which we found movies streaming data, I was looking a way to implement it in my site but there isn't an official way. I found this <a>resource</a> an it's a basic API it doesn't offer too much info about the queries but it informs a way to use it. Once studied I was looking a way to implement it by TMDb ids, but there isn't a specific query for this, even though it has an 'TMDb id' attribute, I was testing to do it but unfortunatly it couldn't be possible because of the limited queries, instead I went for the search funtion by title and interesting it matches quiet fine in every search. So this works, there is a problem when it does not find the movie and thats why I double check the response with the initial title to be sure about the result. Although this only works in a local enviroment an it's not available for production do to its CORS policy",
+                    "image": "assets/images/moviesPwa.png"
+                }
+            ],
+            "conclusion": "This is a useful app, I really enjoyed doing it. It was a great experience with different APIs. And I use it every time I don't know what to watch and to find past interesting movies, not just the trends."
+        }
+    },
+    {
+        "headline": "Box Speaker",
+        "intro": "A box that works an amplifier and makes some atary sounds",
+        "description": "The box is for Leandro, an animator, he gives the box to kids, they pressed it and he do different things based in the sound.",
+        "image": "assets/images/boxSound.jpg",
+        "technologies": [
+            "C",
+            "C++"
+        ],
+        "github": "",
+        "artist-web": "",
+        "details": {
+            "title": "Discover Movies Details",
+            "summary": "I made this app for my self, I wanted to have all movies data in my hand and get its information as easy as posible. I always had to look for movies by my self, looking in webpages and youtube videos. But those often weren't good enough for me. So I created this app in order to find movies easely. Looking for movies by actor and check if they have awards and nominations. I also wanted to check if they were available in streaming platforms for that I use Justwatch API but unfortunatly we can use it only in local do to its CORS policy.",
+            "images": [
+                "assets/soundBox/img01.jpg",
+                "assets/soundBox/img02.jpg",
+                "assets/soundBox/img03.jpg",
+                "assets/soundBox/img05.jpg",
+                "assets/soundBox/img06.jpg",
+                "assets/soundBox/img07.jpg",
+                "assets/soundBox/img08.jpg",
+                "assets/soundBox/img09.jpg",
+                "assets/soundBox/img10.jpg"
+            ],
+            "cards": [
+                {
+                    "subtitle": "Tabs Design",
+                    "text": "I only wanted to have three tabs. Home tab is the welcome page in which we have the search bar, popular movies, tvshows and recomendations, these last one appear once we checked our favorite ones and it's based in TMDB api system. Discovery tab would be a place to find the most popular movies by year and genre. And the last tab for our personal list for movies. The ones we have seen, favorites and to watch.",
+                    "image": "assets/images/moviesPwa.png"
+                },
+                {
+                    "subtitle": "The Movie Database API",
+                    "text": "This API is very popular it's used in many other sides, so I wanted to try it as well. When I checked its documentation I saw that it was very organized and it had most of the functionality I was looking for, movie details, recomendations, actor movies and so on. Then I realized that it hasn't have actor's tvshows as a basic query so I had to implement a search query, that has its disadvantage, because the response isn't quite clean and I had to make some filters in order to have the results I was expecting. I finished all the app based in just this API, then I wanted to move forward to implement nominations details and streaming availability that this API don't offer.",
+                    "image": "assets/soundBox/img04.jpg"
+                },
+                {
+                    "subtitle": "Wikipedia API",
+                    "text": "Once we have seen an organized API, Wikipedia give me some good hours to study, this API is very complex. Before this API I was looking for a more specific API for movie nominations but I couldn't find a good one. So I decided to use Wikipedia because is like an open encyclopedia, and maybe it'll be useful for another future project. When I look more deep into it, I saw that it has multiple queries and it hasn't have as good examples as I wanted, but well it's just a new tool to learn so I studied all its options and finally I could create the query I wanted, the one that returns movie nominations. But it's not as clean as I would like, because in order to exact table of a movie page I have to request two queries. One for seeking nominations section and the other to extract the html of that table, there is a way to do it in just one query but now it comes the second problem, I look for movie queries based in its title (tmdb title) because there isn't id relation, so we have the title and it works for most of the movies, but for those that don't, we have to create another query, you can see in the image the queries I had to create in order to have most of the movies nominations details. I still think it's not a clean solution but it works, and that is all I wanted.",
+                    "image": "assets/images/moviesPwa.png"
+                },
+                {
+                    "subtitle": "Justwatch API",
+                    "text": "Justwatch is the only site in which we found movies streaming data, I was looking a way to implement it in my site but there isn't an official way. I found this <a>resource</a> an it's a basic API it doesn't offer too much info about the queries but it informs a way to use it. Once studied I was looking a way to implement it by TMDb ids, but there isn't a specific query for this, even though it has an 'TMDb id' attribute, I was testing to do it but unfortunatly it couldn't be possible because of the limited queries, instead I went for the search funtion by title and interesting it matches quiet fine in every search. So this works, there is a problem when it does not find the movie and thats why I double check the response with the initial title to be sure about the result. Although this only works in a local enviroment an it's not available for production do to its CORS policy",
+                    "image": "assets/images/moviesPwa.png"
+                }
+            ],
+            "conclusion": "This is a useful app, I really enjoyed doing it. It was a great experience with different APIs. And I use it every time I don't know what to watch and to find past interesting movies, not just the trends."
+        }
+    },
+    {
+        "headline": "Paint Touch Sound",
+        "intro": "A small prototype to create a mural with sound.",
+        "description": "The main idea was to create a mural instrument in which you can touch an it speaks.",
+        "image": "assets/images/muralSound.png",
+        "technologies": [
+            "C",
+            "C++"
+        ],
+        "github": "",
+        "artist-web": "",
+        "details": {
+            "title": "Discover Movies Details",
+            "summary": "I made this app for my self, I wanted to have all movies data in my hand and get its information as easy as posible. I always had to look for movies by my self, looking in webpages and youtube videos. But those often weren't good enough for me. So I created this app in order to find movies easely. Looking for movies by actor and check if they have awards and nominations. I also wanted to check if they were available in streaming platforms for that I use Justwatch API but unfortunatly we can use it only in local do to its CORS policy.",
+            "images": [
+                "assets/soundMural/img01.jpg",
+                "assets/soundMural/img02.jpg",
+                "assets/soundMural/img03.jpg",
+                "assets/soundMural/img04.jpg",
+                "assets/soundMural/img05.jpg",
+                "assets/soundMural/img06.jpg",
+                "assets/soundMural/img07.jpg",
+                "assets/soundMural/img08.jpg",
+                "assets/soundMural/img09.jpg",
+                "assets/soundMural/img10.jpg",
+                "assets/soundMural/img11.jpg"
+            ],
+            "cards": [
+                {
+                    "subtitle": "Tabs Design",
+                    "text": "I only wanted to have three tabs. Home tab is the welcome page in which we have the search bar, popular movies, tvshows and recomendations, these last one appear once we checked our favorite ones and it's based in TMDB api system. Discovery tab would be a place to find the most popular movies by year and genre. And the last tab for our personal list for movies. The ones we have seen, favorites and to watch.",
+                    "image": "assets/images/moviesPwa.png"
+                },
+                {
+                    "subtitle": "The Movie Database API",
+                    "text": "This API is very popular it's used in many other sides, so I wanted to try it as well. When I checked its documentation I saw that it was very organized and it had most of the functionality I was looking for, movie details, recomendations, actor movies and so on. Then I realized that it hasn't have actor's tvshows as a basic query so I had to implement a search query, that has its disadvantage, because the response isn't quite clean and I had to make some filters in order to have the results I was expecting. I finished all the app based in just this API, then I wanted to move forward to implement nominations details and streaming availability that this API don't offer.",
+                    "image": "assets/images/moviesPwa.png"
+                },
+                {
+                    "subtitle": "Wikipedia API",
+                    "text": "Once we have seen an organized API, Wikipedia give me some good hours to study, this API is very complex. Before this API I was looking for a more specific API for movie nominations but I couldn't find a good one. So I decided to use Wikipedia because is like an open encyclopedia, and maybe it'll be useful for another future project. When I look more deep into it, I saw that it has multiple queries and it hasn't have as good examples as I wanted, but well it's just a new tool to learn so I studied all its options and finally I could create the query I wanted, the one that returns movie nominations. But it's not as clean as I would like, because in order to exact table of a movie page I have to request two queries. One for seeking nominations section and the other to extract the html of that table, there is a way to do it in just one query but now it comes the second problem, I look for movie queries based in its title (tmdb title) because there isn't id relation, so we have the title and it works for most of the movies, but for those that don't, we have to create another query, you can see in the image the queries I had to create in order to have most of the movies nominations details. I still think it's not a clean solution but it works, and that is all I wanted.",
+                    "image": "assets/images/moviesPwa.png"
+                },
+                {
+                    "subtitle": "Justwatch API",
+                    "text": "Justwatch is the only site in which we found movies streaming data, I was looking a way to implement it in my site but there isn't an official way. I found this <a>resource</a> an it's a basic API it doesn't offer too much info about the queries but it informs a way to use it. Once studied I was looking a way to implement it by TMDb ids, but there isn't a specific query for this, even though it has an 'TMDb id' attribute, I was testing to do it but unfortunatly it couldn't be possible because of the limited queries, instead I went for the search funtion by title and interesting it matches quiet fine in every search. So this works, there is a problem when it does not find the movie and thats why I double check the response with the initial title to be sure about the result. Although this only works in a local enviroment an it's not available for production do to its CORS policy",
+                    "image": "assets/images/moviesPwa.png"
+                }
+            ],
+            "conclusion": "This is a useful app, I really enjoyed doing it. It was a great experience with different APIs. And I use it every time I don't know what to watch and to find past interesting movies, not just the trends."
+        }
+    }
+]
