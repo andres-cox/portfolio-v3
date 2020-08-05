@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { ISoftProject } from '../models/soft-project.interface';
+import { ISoftProject, ISoftProjectLinks } from '../models/soft-project.interface';
 import { IElecProject } from '../models/elec-project.interface';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
@@ -19,6 +19,14 @@ export class DataService {
   getSoftProjectDetails(title: string) {
     const projects = this.http.get<ISoftProject[]>('assets/data/soft-projects.json');
     return projects.pipe(map(res => res.find(project => project.headline == title).details))
+  }
+
+  getSoftProjectLinks(title: string) {
+    const projects = this.http.get<ISoftProject[]>('assets/data/soft-projects.json');
+    return projects.pipe(map(res => {
+      const project = res.find(project => project.headline == title);
+      return `{"github" : ${project.github},"website" : ${project.website}}`;
+    }))
   }
 
   getElectronicProjects(): Observable<IElecProject[]> {

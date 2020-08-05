@@ -17,6 +17,11 @@ export interface ISoftProjectDetails {
     conclusion: string;
 }
 
+export interface ISoftProjectLinks {
+    github: string;
+    website: string;
+}
+
 interface Card {
     subtitle: string;
     text: string;

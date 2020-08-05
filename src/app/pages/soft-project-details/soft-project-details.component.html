@@ -5,7 +5,13 @@
         </div>
     </swiper>
     <div class="container">
-        <h2 class="project__title">{{ project.title }}</h2>
+        <div class="project__headline">
+            <h2 class="project__headline-title">{{ project.title }}</h2>
+            <div class="project__headline-links">
+                <a [href]="links.github"><i class="fab fa-github"></i></a>
+                <a [href]="links.website"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
         <p class="project__description">{{ project.summary }}</p>
         <div class="project__cards">
             <div class="card" *ngFor="let card of project.cards">

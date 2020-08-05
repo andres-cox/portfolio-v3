@@ -10,8 +10,8 @@
             "Wikipedia API",
             "JustWatch API"
         ],
-        "github": "http:dasd",
-        "website": "http:web",
+        "github": "https://github.com/andres-cox/movies-pwa",
+        "website": "https://movies-pwa-6585e.firebaseapp.com/",
         "details": {
             "title": "Discover Movies Details",
             "summary": "I made this app for my self, I wanted to have all movies data in my hand and get its information as easy as posible. I always had to look for movies by my self, looking in webpages and youtube videos. But those often weren't good enough for me. So I created this app in order to find movies easely. Looking for movies by actor and check if they have awards and nominations. I also wanted to check if they were available in streaming platforms for that I use Justwatch API but unfortunatly we can use it only in local do to its CORS policy.",
@@ -26,7 +26,7 @@
                 {
                     "subtitle": "Tabs Design",
                     "text": "I only wanted to have three tabs. Home tab is the welcome page in which we have the search bar, popular movies, tvshows and recomendations, these last one appear once we checked our favorite ones and it's based in TMDB api system. Discovery tab would be a place to find the most popular movies by year and genre. And the last tab for our personal list for movies. The ones we have seen, favorites and to watch.",
-                    "image": "assets/images/moviesPwa.png"
+                    "image": "assets/movies-app/m-home.png"
                 },
                 {
                     "subtitle": "The Movie Database API",

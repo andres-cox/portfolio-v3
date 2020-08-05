@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { SwiperConfigInterface, SwiperScrollbarInterface, SwiperPaginationInterface, SwiperComponent, SwiperDirective } from 'ngx-swiper-wrapper';
 import { ActivatedRoute } from '@angular/router';
 import { DataService } from 'src/app/services/data.service';
-import { ISoftProjectDetails } from '../../models/soft-project.interface'
+import { ISoftProjectDetails, ISoftProjectLinks } from '../../models/soft-project.interface'
 
 @Component({
   selector: 'app-soft-project-details',
@@ -46,6 +46,7 @@ export class SoftProjectDetailsComponent implements OnInit {
   //   hideOnClick: false
   // };
   project: ISoftProjectDetails;
+  links: ISoftProjectLinks;
 
   @ViewChild(SwiperComponent, { static: false }) componentRef?: SwiperComponent;
   @ViewChild(SwiperDirective, { static: false }) directiveRef?: SwiperDirective;
@@ -57,15 +58,13 @@ export class SoftProjectDetailsComponent implements OnInit {
 
   ngOnInit(): void {
     const headline = this.route.snapshot.paramMap.get("headline");
-    console.log(headline);
     this.dataService.getSoftProjectDetails(headline).subscribe(res => {
       this.project = res;
       this.slides = res.images;
     });
-    this.dataService.getElectronicProjectDetails(headline).subscribe(res => {
-      this.project = res;
-      this.slides = res.images;
+    this.dataService.getSoftProjectLinks(headline).subscribe(res => {
+      this.links = res;
+      console.log(res);
     });
-    // this.project.subscribe(res => console.log(res.title))
   }
 }
