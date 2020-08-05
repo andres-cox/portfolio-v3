@@ -88,7 +88,7 @@
                 },
                 {
                     "subtitle": "Improving the Sound",
-                    "text": "Changing the buttons was the easiest part and it worked fined. In order to upgrade the sound there is this lack of power, that's why I used a pack of batteries from those portable batteries I rather used one of this instead of creating one because its charger module isn't easy to find. So with this portable battery we have its charger module and its conversor from 3.7V to 5V. For the amplifier module for the speaker we need 12V min so needed to use an step up dc-dc module and then the amplifier was working fine.",
+                    "text": "Changing the buttons was the easiest part and it worked fine. In order to upgrade the sound there is this lack of power, that's why I used a pack of batteries from those portable batteries I rather used one of this instead of creating one because its charger module isn't easy to find. So with this portable battery we have its charger module and its conversor from 3.7V to 5V. For the amplifier module for the speaker we need 12V min so needed to use an step up dc-dc module and then the amplifier was working fine.",
                     "image": "assets/soundBox/img04.jpg"
                 },
                 {

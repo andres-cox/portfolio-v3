@@ -16,11 +16,10 @@
             "title": "Discover Movies Details",
             "summary": "I made this app for my self, I wanted to have all movies data in my hand and get its information as easy as posible. I always had to look for movies by my self, looking in webpages and youtube videos. But those often weren't good enough for me. So I created this app in order to find movies easely. Looking for movies by actor and check if they have awards and nominations. I also wanted to check if they were available in streaming platforms for that I use Justwatch API but unfortunatly we can use it only in local do to its CORS policy.",
             "images": [
-                "assets/management-app/home.png",
-                "assets/management-app/employees-list.png",
-                "assets/management-app/assignments.png",
-                "assets/management-app/auth-passed.png",
-                "assets/management-app/remove-employee.png"
+                "assets/movies-app/home-dark.png",
+                "assets/movies-app/movie-details.png",
+                "assets/movies-app/movie-details-2.png",
+                "assets/movies-app/search.png"
             ],
             "cards": [
                 {
@@ -64,7 +63,7 @@
         "github": "http:dasd",
         "website": "http:web",
         "details": {
-            "title": "An administration system",
+            "title": "An Admin System",
             "summary": "This was one of my first webs with Angular, I build it while I was learning the tools. So it had many stages, a basic one without many componenents and a few services, an intermidiate with a better design and state management with NgRx. And finally with backend implemented. So this app grew up at the same time with my skills. Thanks to this app I get to know how a complex website is build and the paths one should follow in order to make it scalable an avoid problems.",
             "images": [
                 "assets/management-app/home.png",
@@ -119,22 +118,21 @@
             "title": "An Informative page for Tarija",
             "summary": "Once I learned Angular with previous projects I decided to create this page because of an idea in the past. So I create in this with purpose of creating an informative page with real data and maybe use it in the future. Tarija is one of the more beautiful cities in Bolivia, it's a very silent city, its food and people are great. They have many interesting customs that I wanted to share.",
             "images": [
-                "assets/management-app/home.png",
-                "assets/management-app/employees-list.png",
-                "assets/management-app/assignments.png",
-                "assets/management-app/auth-passed.png",
-                "assets/management-app/remove-employee.png"
+                "assets/turism-web/home.png",
+                "assets/turism-web/places.png",
+                "assets/turism-web/discover.png",
+                "assets/turism-web/explore.png"
             ],
             "cards": [
                 {
                     "subtitle": "The Design and Data",
                     "text": "As an informative page it took me some hours to find really good information to share, here in Bolivia we don't have many pages like this, there are only articles from reports and news. For the design I watch many websites until I found something simple we good looking. Then I decided to create this page with 4 sections (welcome, places, events, map) like most websites.",
-                    "image": "assets/images/moviesPwa.png"
+                    "image": "assets/turism-web/modal.png"
                 },
                 {
                     "subtitle": "Google Maps",
                     "text": "Recently google maps API changed its politics and now you the requests are limited and you have to register your credit card. Of course the requests limited it's enough for this web but then I decided to go for an easier way which involves iframes tags that most sites uses in these cases and I use it with an ngSwitch. I think this isn't a cleaner way for this but for now it is just OK. I think there are web that really needs more functionality with maps, but this was not the case.",
-                    "image": "assets/images/moviesPwa.png"
+                    "image": "assets/turism-web/map.png"
                 }
             ],
             "conclusion": "Sincerely I am not quiet satisfied with this web, the design is nice but not the best. Since the design practice was the main purpose of this web I believe I just an step in the path of creating good looking websites."
@@ -155,11 +153,12 @@
             "title": "An Informative page for Tarija",
             "summary": "This is my first page testing with API, I create this app from a tutorial learning Ionic and upgrated with some functionality I wanted to have. ",
             "images": [
-                "assets/management-app/home.png",
-                "assets/management-app/employees-list.png",
-                "assets/management-app/assignments.png",
-                "assets/management-app/auth-passed.png",
-                "assets/management-app/remove-employee.png"
+                "assets/ecommerce-web/home.png",
+                "assets/ecommerce-web/sections.png",
+                "assets/ecommerce-web/categories.png",
+                "assets/ecommerce-web/regiter.png",
+                "assets/ecommerce-web/project-details.png",
+                "assets/ecommerce-web/cart.png"
             ],
             "cards": [
                 {
@@ -192,30 +191,29 @@
             "title": "Learning a new Framework",
             "summary": "Laravel is one of the most popular frameworks of php. I wanted to test how hard is to learn a new framework once I learned Angular. Coming from Javascript, PHP is a very different language so there was a lot to learn.",
             "images": [
-                "assets/management-app/home.png",
-                "assets/management-app/employees-list.png",
-                "assets/management-app/assignments.png",
-                "assets/management-app/auth-passed.png",
-                "assets/management-app/remove-employee.png"
+                "assets/ecommerce-web/categories.png",
+                "assets/ecommerce-web/sections.png",
+                "assets/ecommerce-web/register.png",
+                "assets/ecommerce-web/product-details.png"
             ],
             "cards": [
                 {
                     "subtitle": "In the frontend",
                     "text": "I didn't want to complain very much in the frontend, since php is a backend language. I used Bootstrap and a nice tool from Laravel called blade templates, in which you can create components, layouts and pages. So it has the basic funtionality and there is an easy way to implement Vue which is a JS framework.",
-                    "image": "assets/images/moviesPwa.png"
+                    "image": "assets/ecommerce-web/home.png"
                 },
                 {
                     "subtitle": "Laravel",
                     "text": "Laravel is an MVC framework, it has folders for views, routes, controlers and so on. The main advantage is that you have direct control to your database by mysql queries, you can have the frontend work directly without an API for an easy way Laravel has a custom style code to interact.",
-                    "image": "assets/images/moviesPwa.png"
+                    "image": "assets/ecommerce-web/categories.png"
                 },
                 {
                     "subtitle": "In the Backend",
-                    "text": "With Laravel you have custom commands to create database, tables, queries files. Or create an squema file and then migrate it. Since this framework is based for backend you have other commands like authentication in order to create a fast functional start",
-                    "image": "assets/images/moviesPwa.png"
+                    "text": "With Laravel you have custom commands to create database, tables, queries files. Or create an squema file and then migrate it. Since this framework is based for backend you have other commands like authentication in order to create a fast functional start. For this project I create a basic Cart system for buyers with an auth required.",
+                    "image": "assets/ecommerce-web/cart.png"
                 }
             ],
-            "conclusion": "I didn't dive deeper in this framework, this was a test to see how difficult would be to learn a new framework from scratch. "
+            "conclusion": "I didn't dive deeper in this framework, this was a test to see how difficult would be to learn a new framework from scratch. And it's good too see that there are common aspects between frameworks and both face the same problems and have their own solution."
         }
     }
 ]

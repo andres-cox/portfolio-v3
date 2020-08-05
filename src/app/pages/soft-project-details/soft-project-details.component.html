@@ -8,8 +8,8 @@
         <div class="project__headline">
             <h2 class="project__headline-title">{{ project.title }}</h2>
             <div class="project__headline-links">
-                <a [href]="links.github"><i class="fab fa-github"></i></a>
-                <a [href]="links.website"><i class="fas fa-external-link-alt"></i></a>
+                <a target="_blank" [href]="github"><i class="fab fa-github"></i></a>
+                <a target="_blank" [href]="website"><i class="fas fa-external-link-alt"></i></a>
             </div>
         </div>
         <p class="project__description">{{ project.summary }}</p>
@@ -18,11 +18,11 @@
                 <img class="card__image" [src]="card.image">
                 <div class="card__content">
                     <h3 class="card__title">{{ card.subtitle }}</h3>
-                    <p class="card__description">{{ card.text }}</p>
+                    <p class="card__description" [innerHTML]=card.text></p>
                 </div>
             </div>
         </div>
-        <h2 class="project__title">Comments</h2>
+        <h2 class="project__headline-title">Comments</h2>
         <p class="project__description">{{ project.conclusion }}</p>
     </div>
 </div>
