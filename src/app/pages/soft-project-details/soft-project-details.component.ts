@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import { SwiperConfigInterface, SwiperScrollbarInterface, SwiperPaginationInterface, SwiperComponent, SwiperDirective } from 'ngx-swiper-wrapper';
 import { ActivatedRoute } from '@angular/router';
 import { DataService } from 'src/app/services/data.service';
@@ -7,7 +7,8 @@ import { ISoftProjectDetails } from '../../models/soft-project.interface'
 @Component({
   selector: 'app-soft-project-details',
   templateUrl: './soft-project-details.component.html',
-  styleUrls: ['./soft-project-details.component.scss']
+  styleUrls: ['./soft-project-details.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class SoftProjectDetailsComponent implements OnInit {
 

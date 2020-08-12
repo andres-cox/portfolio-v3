@@ -15,7 +15,7 @@
         <p class="project__description">{{ project.summary }}</p>
         <div class="project__cards">
             <div class="card" *ngFor="let card of project.cards">
-                <img class="card__image" [src]="card.image">
+                <img class="card__image" *ngIf="card.image !== ''" [src]="card.image">
                 <div class="card__content">
                     <h3 class="card__title">{{ card.subtitle }}</h3>
                     <p class="card__description" [innerHTML]=card.text></p>
