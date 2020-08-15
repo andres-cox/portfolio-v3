@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, HostBinding } from '@angular/core';
 import { animations } from 'src/app/shared/animations';
 import { ISoftProject } from 'src/app/models/soft-project.interface';
 
@@ -13,10 +13,12 @@ export class ProjectComponent implements OnInit {
   @Input() project: ISoftProject;
   state: string = 'inactive';
 
-
   constructor() { }
 
   ngOnInit(): void {
+    const windowSize = window.innerWidth;
+
+    this.state = (windowSize < 768) ? 'active' : 'inactive';
   }
 
   onAppear() {

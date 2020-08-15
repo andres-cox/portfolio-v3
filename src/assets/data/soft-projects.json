@@ -30,7 +30,7 @@
                 {
                     "subtitle": "The Movie Database API",
                     "text": "This API is very popular it's used in many other sides, so I wanted to try it as well. When I checked its documentation I saw that it was very organized and it had most of the functionality I was looking for, movie details, recomendations, actor's movies. </br></br> Then I realized that it hasn't have actor's tvshows as a basic query so I had to implement a search query, but it has its disadvantage, because the response isn't quite clean and I had to create some filters in order to have the result I was expecting. </br></br> I finished all the app based in just this API, then I wanted to move forward to implement nominations details and streaming availability.",
-                    "image": "assets/movies-app/m-movie-details-1.png"
+                    "image": "assets/movies-app/m-details.jpeg"
                 },
                 {
                     "subtitle": "Wikipedia API",
@@ -39,7 +39,7 @@
                 },
                 {
                     "subtitle": "Justwatch API",
-                    "text": "Justwatch is the only site in which we found movies streaming data, I was looking a way to implement it in my site but there isn't an official way. I found this <a target='_blank' href='https://github.com/lufinkey/node-justwatch-api'>resource</a> an it's a basic API it doesn't offer too much info about the queries but it informs a way to use it. <br><br> Once studied I was looking a way to implement it by TMDb ids, but there isn't a specific query for this, even though it has an 'TMDb id' attribute, I was testing to do it but unfortunatly it couldn't be possible because of the limited queries, instead I went for the search funtion by title and it matches quiet fine in every search. So this method works, there is a problem when it does'ot find the movie and thats why I double check the response with the initial title to be sure about the result. <br><br> Although this only works in a local enviroment an it's not available for production do to its CORS policy",
+                    "text": "Justwatch is the only site in which we found movies streaming data, I was looking a way to implement it in my site but there isn't an official way. I found this <strong><a target='_blank' href='https://github.com/lufinkey/node-justwatch-api'>resource</a></strong> an it's a basic API it doesn't offer too much info about the queries but it informs a way to use it. <br><br> Once studied I was looking a way to implement it by TMDb ids, but there isn't a specific query for this, even though it has an 'TMDb id' attribute, I was testing to do it but unfortunatly it couldn't be possible because of the limited queries, instead I went for the search funtion by title and it matches quiet fine in every search. So this method works, there is a problem when it does'ot find the movie and thats why I double check the response with the initial title to be sure about the result. <br><br> Although this only works in a local enviroment an it's not available for production do to its CORS policy",
                     "image": ""
                 }
             ],
@@ -60,11 +60,11 @@
             "Mongo",
             "Docker"
         ],
-        "github": "http:dasd",
-        "website": "http:web",
+        "github": "https://github.com/andres-cox/management-app",
+        "website": "https://thawing-plains-52078.herokuapp.com/",
         "details": {
             "title": "An Admin System",
-            "summary": "This was one of my first webs with Angular, I build it while I was learning the tools. So it had many stages, a basic one without many componenents and a few services, an intermidiate with a better design and state management with NgRx. And finally with backend implemented. So this app grew up at the same time with my skills. Thanks to this app I get to know how a complex website is build and the paths one should follow in order to make it scalable an avoid problems.",
+            "summary": "This was one of my first websites with Angular, I build it while I was learning the tools. So it had many stages, a basic one without many componenents and a few services, an intermidiate with a better design and state management with NgRx. And finally with backend implemented. So this app grew up at the same time with my skills. Thanks to this app I get to know how a complex website is build and the paths one should follow in order to make it scalable an avoid problems.",
             "images": [
                 "assets/management-app/home.png",
                 "assets/management-app/employees-list.png",
@@ -75,28 +75,28 @@
             "cards": [
                 {
                     "subtitle": "The Idea",
-                    "text": "The idea came in one of my interns, my mentor had this idea for Human Resources so he give the task. I was learning the concepts of angular and this was a way to implement the concepts learned. That is way it had many stages, I had to rebuild many parts of the page as I wanted more functionality. There were frecuent reviews that helped me go in the right way.",
-                    "image": "assets/images/moviesPwa.png"
+                    "text": "The idea came in one of my interns, my mentor had this idea for Human Resources and he give me the task. I was learning the concepts of angular and this was a way to implement the concepts learned. That's why it had many stages, I had to rebuild many parts of the page as I wanted more functionality. There were frecuent reviews that helped me go in the right way.",
+                    "image": "assets/management-app/auth-passed.png"
                 },
                 {
                     "subtitle": "Using NgRx",
-                    "text": "At the beginning I was just using services, a dataService was the one that had all the methods I required, but then I was watching tutorials about NgRx and the team was also using this technology. So I remove the dataService a created a store for NgRx it was very complex at the beginning but once learned I could apreciate its advantages, it really helps to have a clean functionality in the web, avoiding refresh events and unnecessary requests. State management is a great practice to manage data in an efficient way.",
-                    "image": "assets/images/moviesPwa.png"
+                    "text": "At the beginning I was just using services, a dataService was the one that had all the methods I required, but then I was watching tutorials about NgRx and the team was also using this technology. <br><br> So I remove the dataService and created a store for NgRx it was very complex at the beginning, but once learned I could apreciate its advantages, it really helps to have a clean functionality in the web, avoiding refresh events and unnecessary requests.",
+                    "image": ""
                 },
                 {
                     "subtitle": "Firebase",
-                    "text": "I used firebase for authentication in order to get admin operations. At the beginning I used this platform for my backend to save the data and the status of the employees. It's nice tool to have and the steps of deploying an web in this site are very simple. I'll look deeper for other projects, but for this web it was just for the sign in form",
-                    "image": "assets/images/moviesPwa.png"
+                    "text": "I used firebase for authentication in order to get admin operations. At the beginning I used this platform for my backend to save the data and the status of the employees. <br><br> It's nice tool to have and the steps of deploying an web in this site are very simple. I'll look deeper for other projects, but for this web it is just for the sign in and sign up form.",
+                    "image": "assets/management-app/sign-in.png"
                 },
                 {
                     "subtitle": "GraphQL",
-                    "text": "Once finished the frontend I wanted to start learning the backend, and then my mentor recommend me to learn GraphQL because it is a modern technology and when I started learning it I saw why it was necessary. Most of the time REST APIs build queries and in the frontend, when we use it we get some unnecessary data that we can't avoid, so with the response we select the attributes and create some filters. With GraphQL this is easier because its queries are customizable and we get the data we really need preventing unnecessary code in the frontend.",
-                    "image": "assets/images/moviesPwa.png"
+                    "text": "Once finished the frontend I wanted to start learning the backend, my mentor recommend me to learn GraphQL because it is a modern technology and when I started learning it, I saw why it was necessary. <br><br> Most of the time REST APIs build queries and in the frontend, when we use it we get some unnecessary data that we can't avoid, so with the response we select the attributes and create some filters. With GraphQL this is easier, because its queries are customizable and we get the data we really need preventing unnecessary code in the frontend.",
+                    "image": ""
                 },
                 {
                     "subtitle": "Apollo & NgRx",
-                    "text": "Once the backend was finished with GraphQL and Mongo. There was Apollo to integrate Frontend and Backend with GraphQL. But then it came this doubt about using NgRx. With the backend implemented we just can use custom queries in the places we needed and NgRx might not be useful this time. But there is a part in the Web in which we need a filter employees for a search event and doing this with queries isn't quiet clean in my opinion, there is a little flash everytime with emit that event. So I went for the complex way, and I research a lot to find a way to join Apollo and NgRx, there wasn't good enogh documentation or examples until I found a code in stackblitz that implements it. The solution is linking ApolloClient cache with NgRx cache, with this finally we can see the data again with NgRx and customize the web with our needs. Now with these useful tools. And there isn't flashing problems with the search functionality. Now it's very fast and smooth.",
-                    "image": "assets/images/moviesPwa.png"
+                    "text": "Once the backend was finished with GraphQL and Mongo. There was Apollo to integrate Frontend and Backend with GraphQL. But then it came this doubt about using NgRx. <br><br> With the backend implemented we just can use custom queries in the places we needed and NgRx might not be useful this time. But there is a part in the Web in which we need a filter employees for a search event and doing this with queries isn't quiet clean in my opinion, there is a little flash everytime we emit that event. <br><br> <img src='assets/management-app/search.png'> <br><br> So I went for the complex way, and I research a lot to find a way to join Apollo and NgRx, there wasn't good enogh documentation or examples until I found a code in stackblitz that implements it. <br><br> The solution is linking ApolloClient cache with NgRx cache, with this finally we can see the data again with NgRx and customize the web with our needs. Now with these useful tools. And there isn't flashing problems with the search functionality. Now it's fast and smooth.",
+                    "image": ""
                 }
             ],
             "conclusion": "Since this is one of my first projects, I learned too much doing it and I am proud of it. With this project I figure out that Angular is a very complex framework; when you want to create a new funtionality, a new page or other thing, it takes some steps to make it, but it's because it forces you to follow good paterns and create an scalable project. I am still watching to this project as a test view to implement new things seen how difficult could be to implement new things for the purpose of growing and to have a guide for future projects."
@@ -112,8 +112,8 @@
             "SCSS",
             "ngx-translate"
         ],
-        "github": "http:dasd",
-        "website": "http:web",
+        "github": "https://github.com/andres-cox/turism-page-angular",
+        "website": "https://tarija-page.herokuapp.com/",
         "details": {
             "title": "An Informative page for Tarija",
             "summary": "Once I learned Angular with previous projects I decided to create this page because of an idea in the past. So I create in this with purpose of creating an informative page with real data and maybe use it in the future. Tarija is one of the more beautiful cities in Bolivia, it's a very silent city, its food and people are great. They have many interesting customs that I wanted to share.",
@@ -126,12 +126,12 @@
             "cards": [
                 {
                     "subtitle": "The Design and Data",
-                    "text": "As an informative page it took me some hours to find really good information to share, here in Bolivia we don't have many pages like this, there are only articles from reports and news. For the design I watch many websites until I found something simple we good looking. Then I decided to create this page with 4 sections (welcome, places, events, map) like most websites.",
+                    "text": "As an informative page it took me some hours to find really good information to share, here in Bolivia we don't have many pages like this, there are only articles from reports and news. <br><br> For the design I watch many websites until I found something simple we good looking. Then I decided to create this page with 4 sections (welcome, places, events, map) like most websites.",
                     "image": "assets/turism-web/modal.png"
                 },
                 {
                     "subtitle": "Google Maps",
-                    "text": "Recently google maps API changed its politics and now you the requests are limited and you have to register your credit card. Of course the requests limited it's enough for this web but then I decided to go for an easier way which involves iframes tags that most sites uses in these cases and I use it with an ngSwitch. I think this isn't a cleaner way for this but for now it is just OK. I think there are web that really needs more functionality with maps, but this was not the case.",
+                    "text": "Recently google maps API changed its politics and now you the requests are limited and you have to register your credit card. Of course the requests limited it's enough for this web but then I decided to go for an easier way which involves iframes tags that most sites uses in these cases and I use it with an ngSwitch. <br><br> I think this isn't a cleaner way for this but for now it is just OK. I think there are web that really needs more functionality with maps, but this was not the case.",
                     "image": "assets/turism-web/map.png"
                 }
             ],
@@ -147,32 +147,24 @@
             "Ionic",
             "News API"
         ],
-        "github": "http:dasd",
-        "website": "http:web",
+        "github": "https://github.com/andres-cox/news-app",
+        "website": "https://ionic-pwa-12eda.firebaseapp.com/tabs/tab1",
         "details": {
-            "title": "An Informative page for Tarija",
-            "summary": "This is my first page testing with API, I create this app from a tutorial learning Ionic and upgrated with some functionality I wanted to have. ",
+            "title": "A PWA news page",
+            "summary": "This is my first page testing with an API, I created this app from a tutorial learning Ionic and upgrated with some functionality I wanted to have. ",
             "images": [
-                "assets/ecommerce-web/home.png",
-                "assets/ecommerce-web/sections.png",
-                "assets/ecommerce-web/categories.png",
-                "assets/ecommerce-web/regiter.png",
-                "assets/ecommerce-web/project-details.png",
-                "assets/ecommerce-web/cart.png"
+                "assets/news-app/home.png",
+                "assets/news-app/headers.png",
+                "assets/news-app/favorites.png"
             ],
             "cards": [
                 {
-                    "subtitle": "The Design and Data",
-                    "text": "As an informative page it took me some hours to find really good information to share, here in Bolivia we don't have many pages like this, there are only articles from reports and news. For the design I watch many websites until I found something simple we good looking. Then I decided to create this page with 4 sections (welcome, places, events, map) like most websites.",
-                    "image": "assets/images/moviesPwa.png"
-                },
-                {
-                    "subtitle": "Google Maps",
-                    "text": "Recently google maps API changed its politics and now requests are limited and you have to register your credit card. Of course the requests limited it's enough for this web but then I decided to go for an easier way which involves iframes tags that most sites uses in these cases and I use it with an ngSwitch. I think this isn't a cleaner way for this but for now it is just OK. I think there are web that really needs more functionality with maps, but this was not the case.",
-                    "image": "assets/images/moviesPwa.png"
+                    "subtitle": "The Idea and the Design",
+                    "text": "This page is created from an Ionic tutorial, I build it as a simple guide for a simple PWA. Also the main purpose of this app is interacting with Newsapi.org, and its documentation is good an it wasn't hard to implement it. <br><br> But unfortunatly the api isn't available anymore for public, they changed its CORS policy and there is a payment method now. <br><br> While building this PWA I was trying to find the benefits and the requirements of a web to be clasified as a PWA. Then this page only have the minimum requirements to be clasified as a PWA, it uses service worker, the storage, it is deploy in a https URL in firebase and it has a custom icon if you want to add it in your main page of your phone",
+                    "image": "assets/news-app/m-home.png"
                 }
             ],
-            "conclusion": "Sincerely I am not quiet satisfied with this web, the design is nice but not the best. Since the design practice was the main purpose of this web I believe I just an step in the path of creating good looking websites."
+            "conclusion": "This is a basic PWA with simple functionality and a reference for me when I want to implement an API."
         }
     },
     {
@@ -185,8 +177,8 @@
             "Bootstrap",
             "MySQL"
         ],
-        "github": "http:dasd",
-        "website": "http:web",
+        "github": "https://github.com/andres-cox/e-commerce",
+        "website": "https://frightful-vampire-58690.herokuapp.com/",
         "details": {
             "title": "Learning a new Framework",
             "summary": "Laravel is one of the most popular frameworks of php. I wanted to test how hard is to learn a new framework once I learned Angular. Coming from Javascript, PHP is a very different language so there was a lot to learn.",

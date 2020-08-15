@@ -15,12 +15,22 @@
         text-align: center;
         transition: color 200ms ease-in, border-color 200ms ease-in, background-color 200ms ease-in;
     }
+
+    img {
+        width: 23px;
+        height: 23px;
+        filter: invert(90%);
+        display: grid;
+        justify-content: center;
+    }
     
     &__link:hover {
         color: $main-color-dark;
         border-color: $main-color-dark;
         background-color: $tertiary-color;
-
+        img {
+            filter: invert(50%);
+        }
     }
 }
 

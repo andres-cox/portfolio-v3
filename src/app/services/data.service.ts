@@ -21,14 +21,6 @@ export class DataService {
     return projects.pipe(map(res => res.find(project => project.headline == title)))
   }
 
-  // getSoftProjectLinks(title: string) {
-  //   const projects = this.http.get<ISoftProject[]>('assets/data/soft-projects.json');
-  //   return projects.pipe(map(res => {
-  //     const project = res.find(project => project.headline == title);
-  //     return `{"github" : ${project.github},"website" : ${project.website}}`;
-  //   }))
-  // }
-
   getElectronicProjects(): Observable<IElecProject[]> {
     return this.http.get<IElecProject[]>('assets/data/elec-projects.json');
   }
