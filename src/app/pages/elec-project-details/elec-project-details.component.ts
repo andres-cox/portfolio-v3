@@ -3,7 +3,8 @@ import { SwiperConfigInterface, SwiperComponent, SwiperDirective } from 'ngx-swi
 import { ActivatedRoute } from '@angular/router';
 import { DataService } from 'src/app/services/data.service';
 import { IElecProjectDetails } from '../../models/elec-project.interface'
-import { DomSanitizer } from '@angular/platform-browser';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-elec-project-details',
@@ -36,19 +37,9 @@ export class ElecProjectDetailsComponent implements OnInit {
     }
   };
 
-  // private scrollbar: SwiperScrollbarInterface = {
-  //   el: '.swiper-scrollbar',
-  //   hide: false,
-  //   draggable: true
-  // };
-
-  // private pagination: SwiperPaginationInterface = {
-  //   el: '.swiper-pagination',
-  //   clickable: true,
-  //   hideOnClick: false
-  // };
   project: IElecProjectDetails;
-  video;
+  video: SafeResourceUrl;
+  subscription: Subscription;
 
   @ViewChild(SwiperComponent, { static: false }) componentRef?: SwiperComponent;
   @ViewChild(SwiperDirective, { static: false }) directiveRef?: SwiperDirective;
@@ -61,12 +52,15 @@ export class ElecProjectDetailsComponent implements OnInit {
 
   ngOnInit(): void {
     const headline = this.route.snapshot.paramMap.get("headline");
-    this.dataService.getElectronicProjectDetails(headline).subscribe(res => {
+    this.subscription = this.dataService.getElectronicProjectDetails(headline).subscribe(res => {
       this.project = res;
       this.slides = res.images;
       this.video = this.sanitizer.bypassSecurityTrustResourceUrl(this.project.video);
     });
-    // this.project.subscribe(res => console.log(res.title))
+  }
+
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
   }
 
 }

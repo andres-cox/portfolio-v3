@@ -78,8 +78,7 @@
                 "assets/soundBox/img06.jpg",
                 "assets/soundBox/img07.jpg",
                 "assets/soundBox/img08.jpg",
-                "assets/soundBox/img09.jpg",
-                "assets/soundBox/img10.jpg"
+                "assets/soundBox/img09.jpg"
             ],
             "cards": [
                 {
@@ -99,7 +98,7 @@
                 }
             ],
             "video": "https://drive.google.com/file/d/1FPHMzkIrNvv03M8LfujMiginWw39xoih/preview",
-            "conclusion": "This was interesting project, without knowing the main circuit. It's quite difficult to use it, because you don't know its data and by testing you can break it. So you just have to trust in its Inputs and Outputs of its principal circuit. <br>  After I gave the new toy to Leandro, he told me that the kids were really suprised and everyone wanted to use it, even their parents. It was a unique device and since it's transparent it grabs the attention of everyone."
+            "conclusion": "This was interesting project, without knowing the main circuit. It's quite difficult to use it, because you don't know its data and by testing you can break it. So you just have to trust in its Inputs and Outputs of its principal circuit. After I gave the new toy to Leandro, he told me that the kids were really suprised and everyone wanted to use it, even their parents. It was a unique device and since it's transparent it grabs the attention of everyone."
         }
     },
     {
@@ -120,12 +119,10 @@
                 "assets/soundMural/img01.jpg",
                 "assets/soundMural/img02.jpg",
                 "assets/soundMural/img03.jpg",
-                "assets/soundMural/img04.jpg",
                 "assets/soundMural/img05.jpg",
                 "assets/soundMural/img06.jpg",
                 "assets/soundMural/img07.jpg",
                 "assets/soundMural/img08.jpg",
-                "assets/soundMural/img09.jpg",
                 "assets/soundMural/img10.jpg",
                 "assets/soundMural/img11.jpg"
             ],

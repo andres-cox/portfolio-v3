@@ -1,7 +1,7 @@
 <div class="project">
     <swiper class="swiper-container" [disabled]="disabled" [config]="config" fxFlex="auto">
         <div *ngFor="let slide of slides" class="swiper-slide">
-            <img [src]="slide">
+            <img class="swiper-image" [src]="slide">
         </div>
     </swiper>
     <div class="container">

@@ -1,5 +1,5 @@
 <div class="card" [ngClass]="{'card-right': index % 2 == 1}" appScrollAppear (appear)="onAppear()">
-    <div class="card__info" [@fadeLeft]='state'>
+    <div class="card__info" [@.disabled] [@fadeLeft]='state'>
         <h4 class="card__subheadline">{{project.subheadline}}</h4>
         <h3 class="card__headline">{{project.headline}}</h3>
         <div class="card__content">
@@ -16,7 +16,7 @@
             </div>
         </ul>
     </div>
-    <div class="card__image" [@fadeRight]='state'>
+    <div class="card__image" [@.disabled] [@fadeRight]='state'>
         <a target="_blank" [href]="project.website"><img [src]="project.image"></a>
     </div>
 </div>

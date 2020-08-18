@@ -4,6 +4,11 @@
     width: 100%;
 }
 
+.swiper-image {
+    height: 420px;
+    object-fit: cover;
+}
+
 .project {
 
     &__title {

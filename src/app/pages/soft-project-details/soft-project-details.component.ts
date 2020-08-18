@@ -3,6 +3,7 @@ import { SwiperConfigInterface, SwiperComponent, SwiperDirective } from 'ngx-swi
 import { ActivatedRoute } from '@angular/router';
 import { DataService } from 'src/app/services/data.service';
 import { ISoftProjectDetails } from '../../models/soft-project.interface'
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-soft-project-details',
@@ -37,6 +38,7 @@ export class SoftProjectDetailsComponent implements OnInit {
   project: ISoftProjectDetails;
   github: string;
   website: string;
+  subscription: Subscription;
 
   @ViewChild(SwiperComponent, { static: false }) componentRef?: SwiperComponent;
   @ViewChild(SwiperDirective, { static: false }) directiveRef?: SwiperDirective;
@@ -48,11 +50,15 @@ export class SoftProjectDetailsComponent implements OnInit {
 
   ngOnInit(): void {
     const headline = this.route.snapshot.paramMap.get("headline");
-    this.dataService.getSoftProjectDetails(headline).subscribe(res => {
+    this.subscription = this.dataService.getSoftProjectDetails(headline).subscribe(res => {
       this.project = res.details;
       this.slides = res.details.images;
       this.github = res.github;
       this.website = res.website;
     });
+  }
+
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
   }
 }
