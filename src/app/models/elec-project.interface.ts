@@ -14,6 +14,7 @@ export interface IElecProjectDetails {
     summary: string;
     images: string[];
     cards: Card[];
+    video: string;
     conclusion: string;
 }
 
