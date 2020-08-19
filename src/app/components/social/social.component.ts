@@ -8,14 +8,12 @@ import { socialAnimations } from 'src/app/shared/animations';
   animations: [socialAnimations]
 })
 export class SocialComponent implements OnInit {
-  @HostBinding('@.disabled') animation: boolean = false;
+
 
   constructor() { }
 
   ngOnInit(): void {
-    const windowSize = window.innerWidth;
 
-    this.animation = (windowSize < 768) ? true : false;
   }
 
 

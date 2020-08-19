@@ -11,7 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   declarations: [
     SocialComponent,
     HeaderComponent,
-    NavScrollDirective
+    NavScrollDirective,
   ],
   imports: [
     CommonModule,

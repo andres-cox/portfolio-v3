@@ -14,7 +14,6 @@ export class NavScrollDirective {
     const windowSize = window.innerWidth;
 
     this.animation = (windowSize < 768) ? true : false;
-
   }
 
   @HostListener('window:scroll', ['$event']) scrollEvent(event: Event) {

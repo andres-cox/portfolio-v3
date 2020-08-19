@@ -8,8 +8,9 @@ import { ContactComponent } from './contact/contact.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ProjectComponent } from './projects/project/project.component';
 import { ElectronicComponent } from './electronic/electronic.component';
-import { ScrollAppearDirective } from '../directives/scroll-appear.directive';
 import { CardComponent } from './electronic/card/card.component';
+import { ScrollAppearDirective } from '../directives/scroll-appear.directive';
+import { AnimationDirective } from '../directives/animation.directive';
 
 
 
@@ -21,8 +22,9 @@ import { CardComponent } from './electronic/card/card.component';
     AboutComponent,
     ProjectComponent,
     ElectronicComponent,
-    ScrollAppearDirective,
     CardComponent,
+    ScrollAppearDirective,
+    AnimationDirective
   ],
   exports: [
     IntroComponent,

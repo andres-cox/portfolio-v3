@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { PagesModule } from './pages/pages.module';
 import { AppComponent } from './app.component';
 import { SectionsModule } from './sections/sections.module';
+// import { AnimationDirective } from './directives/animation.directive';
 
 @NgModule({
   declarations: [
