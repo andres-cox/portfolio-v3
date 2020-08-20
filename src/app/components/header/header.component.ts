@@ -17,6 +17,13 @@ export class HeaderComponent implements OnInit {
 
   showNav() {
     this.openSideNavbar = !this.openSideNavbar;
+
     document.body.style.overflowY = (this.openSideNavbar) ? "hidden" : "initial";
   }
+
+  hideNav() {
+    this.openSideNavbar = false;
+    document.body.style.overflowY = "initial";
+  }
+
 }
